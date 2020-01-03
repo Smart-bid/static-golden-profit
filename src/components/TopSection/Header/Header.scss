@@ -1,0 +1,25 @@
+.Header {
+    background: #333333;
+    box-shadow: 0 1px 0 0 #404040;
+    margin-bottom: 15px;
+    .grey_title {
+        p {
+            font-size: 13px;
+            color: #bcbcbc;
+            text-align: center;
+            line-height: 22px;
+            &:last-child {
+                color: #ffffff;
+                padding: 0 5px 5px 5px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                display: flex;
+                justify-content: center;
+                span {
+                    padding-left: 15px;
+                    background: url("./header-photos/exclamation-triangle.png") no-repeat center left / 14px;
+                }
+            }
+        }
+    }
+}
