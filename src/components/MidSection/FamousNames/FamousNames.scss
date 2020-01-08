@@ -1,0 +1,34 @@
+.FamousNames {
+  padding: 75px 0;
+  .famous-title {
+    color: #333333;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .famous-description {
+    font-family: "IBM Plex Sans",sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #dfc65b;
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .famous-people {
+    position: relative;
+    padding-left: 120px;
+    padding-top: 50px;
+    img {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      top: 0;
+      left: -5px;
+      border-radius: 80px;
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import Invest from './Invest/Invest'
 import Trend from "./Trend/Trend";
-import HowItWorks from './HowItWorks/HowItWorks'
-import Faq from './Faq/Faq'
 import Partners from './Partners/Partners'
 import vault from './images/gold-vault.jpg'
+import FamousNames from "./FamousNames/FamousNames";
 
 
 export default class MidSection extends Component {
@@ -30,6 +29,7 @@ export default class MidSection extends Component {
                 </div>
                 <Invest languageManager={this.props.languageManager}/>
                 <Trend languageManager={this.props.languageManager}/>
+                <FamousNames languageManager={this.props.languageManager}/>
             </div>
 
         )
