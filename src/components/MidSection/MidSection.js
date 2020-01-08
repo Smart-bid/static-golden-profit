@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Invest from './Invest/Invest'
-import Review from './Review/Review'
+import Trend from "./Trend/Trend";
 import HowItWorks from './HowItWorks/HowItWorks'
 import Faq from './Faq/Faq'
 import Partners from './Partners/Partners'
@@ -29,9 +29,7 @@ export default class MidSection extends Component {
                     </div>
                 </div>
                 <Invest languageManager={this.props.languageManager}/>
-                <Review languageManager={this.props.languageManager}/>
-                <HowItWorks languageManager={this.props.languageManager}/>
-                <Faq languageManager={this.props.languageManager}/>
+                <Trend languageManager={this.props.languageManager}/>
             </div>
 
         )

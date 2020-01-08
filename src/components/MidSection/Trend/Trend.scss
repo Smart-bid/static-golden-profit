@@ -1,0 +1,97 @@
+.Trend {
+    background: #000000;
+
+    .trend-block {
+        background: rgba(34,33,27,0.75);
+        padding: 45px 0;
+    }
+    .trade-title {
+        color: #ffffff;
+        font-size: 55px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .trade-description {
+        color: #dfc65b;
+        text-align: center;
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 28px;
+        letter-spacing: -.025em;
+        line-height: 1.1;
+    }
+    .picture-block {
+        background: #ffffff;
+        border-radius: 3px;
+        padding: 30px 15px 30px;
+        margin: 0 auto 45px;
+        position: relative;
+        .picture-date {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            .year {
+                position: absolute;
+                bottom: 0;
+                font-weight: 700;
+                font-size: 14px;
+                color: #dfc65b;
+            }
+            .start {
+                left: 0;
+            }
+            .end {
+                right: 0;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: calc(100% - 80px);
+                left: 40px;
+                bottom: 10px;
+                height: 1px;
+                background: #e6e6e6;
+            }
+        }
+        svg {
+            max-height: 250px;
+            width: 100%;
+        }
+    }
+    #clip-path {
+        transform: translate(0 -3.5);
+        rect {
+            animation-name: clip-move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            @keyframes clip-move {
+                0% {transform: translateX(-105%);}
+                50% {transform: translateX(0);}
+                100% {transform: translateX(0);}
+            }
+        }
+    }
+    .cls-1,
+    .cls-4 {
+        fill: none;
+    }
+
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+
+    .cls-3 {
+        fill: #ece5c7;
+    }
+
+    .cls-4 {
+        stroke: #d3c06c;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+    }
+}
