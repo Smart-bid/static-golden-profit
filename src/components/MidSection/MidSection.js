@@ -4,6 +4,8 @@ import Trend from "./Trend/Trend";
 import Partners from './Partners/Partners'
 import vault from './images/gold-vault.jpg'
 import FamousNames from "./FamousNames/FamousNames";
+import Benefits from "./Benefits/Benefits";
+import Traders from "./Traders/Traders";
 
 
 export default class MidSection extends Component {
@@ -30,6 +32,8 @@ export default class MidSection extends Component {
                 <Invest languageManager={this.props.languageManager}/>
                 <Trend languageManager={this.props.languageManager}/>
                 <FamousNames languageManager={this.props.languageManager}/>
+                <Benefits languageManager={this.props.languageManager}/>
+                <Traders languageManager={this.props.languageManager}/>
             </div>
 
         )

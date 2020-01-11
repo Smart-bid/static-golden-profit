@@ -1,0 +1,55 @@
+.Traders {
+  padding-bottom: 45px;
+  .user-table-block {
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    margin-top: -170px;
+    background-color: white;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    color: #dfc65b;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 57px;
+  }
+  .table-container {
+    position: relative;
+    height: 521px;
+    overflow-y: hidden;
+    .table-shadow {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 40px;
+      background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%);
+    }
+    table {
+      width: 100%;
+      font-size: 14px;
+      tr {
+        height: 40px;
+        line-height: 1;
+        th {
+          text-align: center;
+          border-bottom: 1px solid #efe8ce;
+          padding-left: 10px;
+          color: #333333;
+          background-color: #f5f1e1;
+        }
+        td {
+          text-align: center;
+        }
+        img {
+          width: 14px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
