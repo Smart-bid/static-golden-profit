@@ -6,6 +6,7 @@ import vault from './images/gold-vault.jpg'
 import FamousNames from "./FamousNames/FamousNames";
 import Benefits from "./Benefits/Benefits";
 import Traders from "./Traders/Traders";
+import Faq from "./Faq/Faq";
 
 
 export default class MidSection extends Component {
@@ -34,6 +35,16 @@ export default class MidSection extends Component {
                 <FamousNames languageManager={this.props.languageManager}/>
                 <Benefits languageManager={this.props.languageManager}/>
                 <Traders languageManager={this.props.languageManager}/>
+                <Faq languageManager={this.props.languageManager}/>
+                <div className="second-form">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <h2>{languageManager.second_form}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         )

@@ -49,6 +49,9 @@
           width: 14px;
           margin: 0 auto;
         }
+        &:nth-child(odd) {
+          background: #f9f9f9;
+        }
       }
     }
   }

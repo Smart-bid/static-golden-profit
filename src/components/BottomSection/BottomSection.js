@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './footer-logo.png'
+import logo from '../TopSection/logo.svg'
 
 export default class BottomSection extends Component {
     render() {
@@ -10,17 +10,25 @@ export default class BottomSection extends Component {
                 <div className="footer">
                     <div className="container">
                         <div className="row">
-                            <div className="col-sm-12">
+                            <div className="col-lg-3 col-md-3">
+                                <img src={logo} alt="logo" className="footer-logo"/>
+                            </div>
+                            <div className="col-lg-9 col-md-9">
                                 <div className="links">
-                                    <a href="#">Home</a>
                                     <a onClick={() => this.props.pageHandler('privacy')}>Privacy Policy</a>
                                     <a onClick={() => this.props.pageHandler('terms')}>Terms</a>
-                                    <a onClick={() => this.props.pageHandler('disc')}>Earnings Disclaimer</a>
-                                    <a onClick={() => this.props.pageHandler('spam')}>Spam Policy</a>
+                                    <a onClick={() => this.props.pageHandler('spam')}>Report Ad / Spam</a>
+                                    <span className="copyright">© 2019</span>
                                 </div>
-                                <div className="content">
-                                    <img src={logo} alt="logo" className="footerlogo"/>
-                                    <div className="copyright">Copyright © Bitcoin Evolution. All Right Reserved.</div>
+                            </div>
+                            <div className="col-12">
+                                <div className="disclaimer">
+                                    <p><span>{languageManager.disclaimer[0]}</span>{languageManager.disclaimer[1]}</p>
+                                    <p>{languageManager.disclaimer[2]}</p>
+                                    <p>{languageManager.disclaimer[3]}</p>
+                                    <p>{languageManager.disclaimer[4]}</p>
+                                    <p>{languageManager.disclaimer[5]}</p>
+                                    <p>{languageManager.disclaimer[6]}</p>
                                 </div>
                             </div>
                         </div>

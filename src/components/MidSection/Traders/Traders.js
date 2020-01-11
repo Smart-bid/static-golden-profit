@@ -42,7 +42,7 @@ export default class Traders extends Component {
                                         return (
                                             <tr className="customer" key={index}>
                                                 <td>{item.name}</td>
-                                                <td>{moment(today).format('h:mm:ss, L')}</td>
+                                                <td>{moment(today).format('HH:mm:ss, L')}</td>
                                                 <td><img src={register} alt="register"/></td>
                                             </tr>
                                         )

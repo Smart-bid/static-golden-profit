@@ -156,53 +156,36 @@
     "faq_title": "FAQ",
     "faq_question": [
       {
-        "q": "How much can I make?",
-        "a": "Your profit depends on your decisions and input. Those who compound their interest into making more high-priced trades, stand to earn a lot more than those who place trades at lower levels. However, it completely depends on how you wish to trade."
+        "question": "How much can I make?",
+        "answer": "Your profit depends on your decisions and input. Those who compound their interest into making more high-priced trades, stand to earn a lot more than those who place trades at lower levels. However, it completely depends on how you wish to trade."
       },
       {
-        "q": "Do I need any trading experience?",
-        "a": "Golden PROFIT has been designed for every level of trader and can give you the skills and confidence you need to make high-level trades. The platform includes the information you need to begin trading, whether you’re a complete beginner or professional trader."
+        "question": "Do I need any trading experience?",
+        "answer": "Golden PROFIT has been designed for every level of trader and can give you the skills and confidence you need to make high-level trades. The platform includes the information you need to begin trading, whether you’re a complete beginner or professional trader."
       },
       {
-        "q": "How much does it cost?",
-        "a": "Our platform is completely free to use. All you need is your starting capital of $250 which is yours to invest and trade."
+        "question": "How much does it cost?",
+        "answer": "Our platform is completely free to use. All you need is your starting capital of $250 which is yours to invest and trade."
       },
       {
-        "q": "How many members are there?",
-        "a": "We have over 250,000 members using our services worldwide."
+        "question": "How many members are there?",
+        "answer": "We have over 250,000 members using our services worldwide."
       },
       {
-        "q": "What companies can I use?",
-        "a": "You can trade all public companies from all the major stock exchanges in the world. If you’ve heard of it, you can trade on it!"
+        "question": "What companies can I use?",
+        "answer": "You can trade all public companies from all the major stock exchanges in the world. If you’ve heard of it, you can trade on it!"
       }
     ],
-    "last_btn": "Get Started Now!",
-    "risk": [
-      "WARNING:",
-      "Due to extremely high media demand, we will close registration as of",
-      " - HURRY!"
+    "second_form": "Begin your new life Now",
+    "disclaimer": [
+      "IMPORTANT: ",
+      "Earnings and Legal Disclaimers",
+      "Earnings and income representations made by Golden Profit, (collectively “This Website” only used as aspirational examples of your earnings potential. The success of those in the testimonials and other examples are exceptional results and therefore are not intended as a guarantee that you or others will achieve the same results. Individual results will vary and are entirely dependent on your use of Golden Profit.",
+      "This Website is not responsible for your actions. You bear sole responsibility for your actions and decisions when using products and services and therefore you should always exercise caution and due diligence. You agree that this Website is not liable to you in any way for the results of using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions.",
+      "This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link.",
+      "*Testimonials:",
+      "All characters, information and events depicted on This Website are entirely fictitious. Any similarity to actual events or persons, living or dead, is purely coincidental."
     ],
-    "exclusive": [
-      "Exclusive for",
-      "English",
-      "Residents"
-    ],
-    "video": "en_1",
-    "error_invalid_email": "Error: Invalid email",
-    "error_empty_email": "Error: Empty email",
-    "error_empty_last_name": "Error: Empty last name",
-    "error_last_name_digits": "Error: Last name can’t contain numbers",
-    "error_empty_first_name": "Error: Empty first name",
-    "error_first_name_digits": "Error: First name can’t contain numbers",
-    "error_empty_password": "Error: Empty password",
-    "error_pass_length": "Error: Password length must be between 6 to 8 characters",
-    "error_pass_special_chars": "Error: Password can’t contain any special chars",
-    "error_pass_small_letter": "Error: Password should contain at least one small letter",
-    "error_pass_cap_letter": "Error: Password should contain at least one capital letter",
-    "error_pass_one_num": "Error: Password should contain at least one number",
-    "error_accept_conditions": "Error: Please accept terms and conditions",
-    "error_real_phone": "System could not register you. Please provide your real phone number.",
-    "error_real_name": "System could not register you. Please provide your real email.",
-    "error_country": "System could not register you. This offer is not available for your country."
+    "video": "en_1"
   }
 }
