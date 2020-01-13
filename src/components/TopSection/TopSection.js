@@ -76,8 +76,8 @@ export default class TopSection extends Component {
                 <div className="top-reg" id="top">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-8 col-md-7 col-sm-12">
-                                <VideoPlayer link={this.state.videos[languageManager.video]} {...this.props}/>
+                            <div className="col-lg-8 col-md-8 col-sm-12 video-player">
+                                <VideoPlayer {...this.props}/>
                             </div>
                             <div className="col-lg-4 col-md-5 col-sm-12">
                                 <div className="regform" ref={this.regPanel}>

@@ -8,15 +8,26 @@ export default class VideoPlayer extends Component {
     super(props)
   
     this.state = {
-       play: true
+        play: true,
+        hide: true
     }
+  }
+
+  hideElement = () => {
+    this.setState({
+      hide: !this.state.hide
+    });
   }
 
 
   render () {
     return (
-      <div className="VideoPlayer" onClick={this.props.trackVideoPlay}>
-        <iframe src="https://player.vimeo.com/video/311657644?app_id=122963" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen="" data-ready="true"></iframe>
+      <div className="VideoPlayer">
+        <div className={`videoOverlayInner ` + this.state.hide} onClick={this.hideElement}>
+          <p>Tap to watch and learn the secret!</p>
+          <img src={btn} alt="play-button"/>
+        </div>
+        <Vimeo videoId="311657644" width='100%' height='100%'/>
       </div>
     )
   }

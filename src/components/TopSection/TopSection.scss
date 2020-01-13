@@ -76,13 +76,57 @@
     .top-reg {
         margin-top: 40px;
         padding-bottom: 30px;
-
+        .video-player {
+            padding-right: 0;
+        }
 
         .VideoPlayer {
-            height: auto;
+            border: 3px solid #fff;
+            height: 100%;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            background: black;
             width: 100%;
-            & video {
-                border: 1px #a110cb solid;
+            .videoOverlayInner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                z-index: 10;
+                background: rgba(0,0,0,0.6);
+                transition: 250ms opacity ease;
+                cursor: pointer;
+                visibility: visible;
+                p {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: bold;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+                img {
+                    width: 90px;
+                    margin: 0 auto;
+                }
+            }
+            .videoOverlayInner.false {
+                visibility: hidden;
+                z-index: 0;
+            }
+            .vimeo {
+                height: 100%;
+            }
+            .vimeo-loading {
+                display: none;
+            }
+            & iframe {
+                height: 100%;
+                width: 100%;
             }
 
         }
