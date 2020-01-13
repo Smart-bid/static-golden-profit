@@ -6,16 +6,23 @@ export default class Faq extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'true'
+            title: [
+                'true',
+                'true',
+                'true',
+                'true',
+                'true'
+            ]
         }
     }
 
     handleClick = (e) => {
         const question = e.target.getAttribute('data-name');
+        const startTitle = ['true', 'true', 'true', 'true', 'true'];
+        const newStatus = startTitle.slice();
         console.log(question);
-        this.setState({
-            title: !this.state.title
-        }, () => {
+        newStatus[question] = !this.state.title[question];
+        this.setState({title: newStatus},() => {
             console.log(this.state);
         });
     }
@@ -37,7 +44,7 @@ export default class Faq extends Component {
                                             return (
                                                 <Card key={index}>
                                                     <Card.Header>
-                                                        <Accordion.Toggle variant="link" data-name="title" className={`question ` + this.state.title} onClick={this.handleClick} eventKey={index}>{item.question}</Accordion.Toggle>
+                                                        <Accordion.Toggle variant="link" data-name={index} className={`question ` + this.state.title[index]} onClick={(e) => {this.handleClick(e)}} eventKey={index}>{item.question}</Accordion.Toggle>
                                                     </Card.Header>
                                                     <Accordion.Collapse eventKey={index}>
                                                         <Card.Body>{item.answer}</Card.Body>
