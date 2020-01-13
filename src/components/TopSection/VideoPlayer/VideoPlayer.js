@@ -15,8 +15,8 @@ export default class VideoPlayer extends Component {
 
   render () {
     return (
-      <div className="VideoPlayer">
-        <Vimeo  videoId="311657644" autoplay={false} controls={true} muted width='100%' height='100%' onClick={this.props.trackVideoPlay}/>
+      <div className="VideoPlayer" onClick={this.props.trackVideoPlay}>
+        <iframe src="https://player.vimeo.com/video/311657644?app_id=122963" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen="" data-ready="true"></iframe>
       </div>
     )
   }

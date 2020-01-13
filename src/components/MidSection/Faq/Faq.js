@@ -20,12 +20,9 @@ export default class Faq extends Component {
         const question = e.target.getAttribute('data-name');
         const startTitle = ['true', 'true', 'true', 'true', 'true'];
         const newStatus = startTitle.slice();
-        console.log(question);
         newStatus[question] = !this.state.title[question];
-        this.setState({title: newStatus},() => {
-            console.log(this.state);
-        });
-    }
+        this.setState({title: newStatus});
+    };
 
     render () {
         let languageManager = this.props.languageManager();
