@@ -1,0 +1,69 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    working_directory: ~/thegoldenprofit.com
+    steps:
+      - checkout
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: npm update
+          command: npm update
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: build
+          command: CI="false" npm run build
+  deploy:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    working_directory: ~/thegoldenprofit.com
+    steps:
+      - checkout
+      - add_ssh_keys
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: npm update
+          command: npm update
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: build
+          command: CI="false" npm run build
+      - run:
+          command: echo '144.76.199.215 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQmCt85vFWpSVWrW2qcnLKigC3LhCWRwTiZcGLriQCB/0H9qoKdmG3OM/Bn7Lr8yAWIJjEsok4fViRKd8hTcBA=' >> ~/.ssh/known_hosts
+      - run:
+          name: deploy via scp
+          command: |
+            scp -r ~/thegoldenprofit.com/build/* admin@144.76.199.215:~/web/thegoldenprofit.com/public_html
+orbs:
+  cypress: cypress-io/cypress@1
+workflows:
+  build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+      - cypress/run:
+          executor: cypress/base-8
+          start: npm start
+          wait-on: 'http://localhost:3000'
+          requires:
+            - build
+      - deploy:
+          requires:
+            - cypress/run
