@@ -58,8 +58,10 @@
         border: 1px solid #404040;
         border-radius: 3px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        opacity: 1;
         -webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
         animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        transition: .3s ease;
         .status {
             p {
                 background: url("./check.png") no-repeat center left / 16px;
@@ -72,6 +74,9 @@
                 padding-left: 17px;
             }
         }
+    }
+    #modal-window.true {
+        opacity: 0;
     }
     .top-reg {
         margin-top: 40px;
@@ -117,16 +122,6 @@
             .videoOverlayInner.false {
                 visibility: hidden;
                 z-index: 0;
-            }
-            .vimeo {
-                height: 100%;
-            }
-            .vimeo-loading {
-                display: none;
-            }
-            & iframe {
-                height: 100%;
-                width: 100%;
             }
 
         }

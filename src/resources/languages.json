@@ -4,15 +4,32 @@
     "header_subtitle": "We are getting an unprecedented number of new users.",
     "title": "Discover your Personal Gold Mine",
     "subtitle": "Join thousands of people investing in the gold market!",
+    "customers_name": [
+      "Amelia",
+      "Elsie",
+      "Fred",
+      "Henry",
+      "Ivy",
+      "Evelin"
+    ],
     "status": " joined",
-    "topreg1": "Start Changing",
-    "topreg2": "Your Life TODAY",
+    "title_form": "CHANGE YOUR LIFE TODAY!",
     "first_name": "First name",
     "last_name": "Last name",
     "email": "Email",
-    "pass": "Password",
+    "password": "Password",
     "pass2": "Confirm Password",
-    "button": "Next >",
+    "button": "Get Access Now",
+    "agreement_first": [
+      "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our ",
+      "Privacy Policy"
+    ],
+    "agreement_second": [
+      "By filling out and sending us the registration form you agree with the ",
+      "Terms & Conditions",
+      " and the ",
+      "Privacy Policy"
+    ],
     "button_last": "REGISTER NOW",
     "passtest": {
       "invalidlength": "The password must be 8 characters long.",
@@ -20,7 +37,12 @@
       "nonumber": "Must contain at least 1 number.",
       "nouppercase": "Must contain at least 1 capital letter."
     },
-    "morebox": "Example: 12John34",
+    "more_title": [
+      "Your data is always protected with us.",
+      "You can change your mind anytime by...",
+      "more"
+    ],
+    "more_decription": "You can change your mind at any time by clicking on the unsubscribe link in the footer of any email you receive from us. We will treat your information with respect. By clicking above, you agree that we may process your information in accordance with these terms.",
     "join_title": "With gold prices rising, there’s never been a better time to invest.",
     "join_subtitle": "Sign up today and keep your money safe by investing in gold!",
     "join_description": "Gold has been the key measure of wealth for hundreds of years and as industries and technologies advance, gold still provides a solid standard for global finances. After the 2008 financial crash, gold was one of the few industries which stayed strong and it’s long history and physical value mean that it will survive every market upset.",
@@ -185,7 +207,6 @@
       "This Website may receive compensation for products and services they recommend to you. If you do not want This Website to be compensated for a recommendation, then we advise that you search online for a similar product through a non-affiliate link.",
       "*Testimonials:",
       "All characters, information and events depicted on This Website are entirely fictitious. Any similarity to actual events or persons, living or dead, is purely coincidental."
-    ],
-    "video": "en_1"
+    ]
   }
 }

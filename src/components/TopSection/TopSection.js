@@ -1,36 +1,20 @@
 import React, { Component } from 'react'
 
 import Header from './Header/Header'
+import ModalWindow from "./ModalWindow/ModalWindow";
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
 import Regform  from './Regform/Regform'
 import Ticker  from './Ticker/Ticker'
 import logo from './logo.svg'
-import ua from './ua.svg'
-
-import en_1 from './en_1.mp4'
-import fr_video from './fr_video.mp4'
-
-
 
 export default class TopSection extends Component {
     constructor(props) {
         super(props)
-
-        this.state = {
-            videos: {
-                en_1,
-                fr_video
-            }
-        };
-
         this.regPanel = React.createRef();
     }
-    
 
     handleScroll() {
-
         let panel = this.regPanel.current;
-
         window.scrollTo({
             top: panel.offsetTop,
             left: 0,
@@ -41,7 +25,6 @@ export default class TopSection extends Component {
 
     render() {
         let languageManager = this.props.languageManager();
-
         return (
             <div className='TopSection'>
                 <Header languageManager={this.props.languageManager} handleScroll={this.handleScroll.bind(this)}/>
@@ -50,17 +33,7 @@ export default class TopSection extends Component {
                         <div className="col-lg-6 logo">
                             <img src={logo} alt="GoldenProfit"/>
                         </div>
-                        <div className="col-lg-6 hidden-block">
-                            <div id="modal-window" className="show">
-                                <img src={ua} alt=""/>
-                                <div className="name">
-                                    <p>Emily N.</p>
-                                </div>
-                                <div className="status">
-                                    <p>{languageManager.status}</p>
-                                </div>
-                            </div>
-                        </div>
+                        <ModalWindow {...this.props} />
                         <div className="col-12">
                             <div className="headline">
                                 <div className="title">
