@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import IntlTelInput from 'react-intl-tel-input'
 import 'react-intl-tel-input/dist/main.css'
 
-import { ReactComponent as Mark } from './excl.svg'
 import logo from '../../BottomSection/logo.png'
-import {Reginputs, errorMessages} from 'sb-lp-framework'
+import {Reginputs, MaterialInputs} from 'sb-lp-framework'
+import {Tooltip} from "@material-ui/core";
 
 
 export default class Regform extends Component {
@@ -15,7 +15,8 @@ export default class Regform extends Component {
             form: {
                 first_name: '',
                 last_name: '',
-                email: ''
+                email: '',
+                password: ''
             },
             responseError: '',
             check: false,
@@ -37,7 +38,6 @@ export default class Regform extends Component {
             }
         };
 
-        this.handleBackwards = this.handleBackwards.bind(this);
         this.handleSync = this.handleSync.bind(this);
     }
 
@@ -73,86 +73,7 @@ export default class Regform extends Component {
             this.props.setLeadData(form).then(this.props.handleLeadStep).then(this.setState({redirect: true}))
         })
         else this.setState({errors: checkParams.errors})
-        // Step 1
-        /*if(this.props.step === 1){
-            paramsToValidate = {
-                email: this.state.email,
-                first_name: this.state.first_name,
-                last_name: this.state.last_name,
-                agree_2: this.state.agree_2,
-                funnel_name: window.location.origin,
-            };
-            let checkParams = this.props.validateParams(paramsToValidate);
-
-            if (checkParams.success) {
-                this.props.setLeadData(paramsToValidate).then(this.props.handleLeadStep(), this.props.handleStep(this.props.step + 1));
-            } else this.setState({errors: checkParams.errors})
-        }*/
-       /* else if (this.props.step === 2){
-            if (this.state.confirm_password === this.state.password) {
-                paramsToValidate = {
-                    password: this.state.password
-                }
-            } else {
-                this.setState({
-                    errors: ['Passwords do not match']
-                })
-                return this.state.errors
-            }
-
-            let submitPassword = this.props.validateParams(paramsToValidate);
-
-            if (submitPassword.success) {
-                this.props.setLeadData(paramsToValidate).then(this.props.handleLeadStep(), this.props.handleStep(this.props.step + 1));
-            }
-        }
-
-        // Step 3
-        else if (this.props.step === 3){
-
-            let tel = form.querySelector('.tel');
-            let phone_number = tel.value.replace(/^\s+|\s/g, '');
-
-            paramsToValidate = {
-                phone_number: phone_number,
-                phone_country_prefix: this.state.phone_country_prefix
-            };
-            let submitPhone = this.props.validateParams(paramsToValidate);
-            if (submitPhone.success) {
-                this.props.handleStep(this.props.step + 1);
-                this.props.setLeadData(paramsToValidate)
-                    .then(this.props.handleSubmit)
-                    .then(res => (res.redirectUrl && res.success) ? window.location = res.redirectUrl : this.setState({responseError: res.error}, this.props.handleStep(this.props.step + 1)))
-                this.setState({
-                    errors: []
-                });
-            }
-            else {
-                const fieldWithMessages = Object.keys(submitPhone.errors).find(field => submitPhone.errors[field].hasOwnProperty('messages'));
-                const firstError = submitPhone.errors[fieldWithMessages].messages[0];
-                this.setState({
-                    errors: firstError
-                })
-            }
-        }*/
     };
-
-    handleBackwards(e) {
-        e.preventDefault();
-        let back = parseInt(e.target.getAttribute('index'));
-        let forms = [...document.querySelectorAll('.Regform')];
-
-        forms.map(form => {
-            let steps = [...form.querySelectorAll('.form-wrapper')];
-            steps.map((step, index) => {
-                for (let i=0;i<=back;i++) {
-                    step.classList.remove('step');
-                }
-            })
-        });
-
-        this.props.handleStep(parseInt(e.target.getAttribute('index')));
-    }
 
     handleSync(e) {
         let input = e.target.value;
@@ -171,17 +92,14 @@ export default class Regform extends Component {
         })
     }
 
-    componentDidUpdate() {
-        let forms = [...document.querySelectorAll('.Regform')];
-
-        forms.map(form => {
-            let steps = [...form.querySelectorAll('.form-wrapper')];
-            steps.map((step, index) => {
-                if (index+1 === this.props.step - 1) {
-                    step.classList.add('step');
-                }
-            })
-        })
+    inputFocus = (key) => {
+        let tempErrors = this.state.errors;
+        delete tempErrors[key];
+        this.setState({errors: tempErrors})
+    }
+    inputValidation = (key) => {
+        let valid = this.props.validateInput({[key]: this.state.form[key]})
+        this.setState({errors: valid})
     }
 
     handleStepChange = (name, value) => {
@@ -203,9 +121,13 @@ export default class Regform extends Component {
 
 
     render() {
+
+        let material = this.props.material,
+            steps = this.props.formSteps,
+            errors = this.state.errors,
+            form = this.state.form,
+            resError = this.props.responseError;
         const {
-          password,
-          confirm_password,
           tel
         } = this.state;
 
@@ -215,15 +137,19 @@ export default class Regform extends Component {
                     {
                         name: 'first_name',
                         type: 'text',
-                        className: 'inputfield small-input',
+                        className: 'inputfield small-input inline',
                         errorClass: 'inputError'
                     },
                     {
                         name: 'last_name',
                         type: 'text',
-                        className: 'inputfield small-input',
+                        className: 'inputfield small-input inline',
                         errorClass: 'inputError'
-                    },
+                    }
+                ]
+            },
+            steptwo = {
+                inputs: [
                     {
                         name: 'email',
                         type: 'email',
@@ -231,99 +157,166 @@ export default class Regform extends Component {
                         errorClass: 'inputError',
                         groupClass: 'form_group'
                     }
-                ],
+                ]
+            },
+            stepthree = {
+                inputs: [
+                    {
+                        name: 'password',
+                        type: 'password',
+                        className: 'inputfield input_small',
+                        errorClass: 'inputError',
+                        groupClass: 'formClass small right',
+                        listClass: 'req_list'
+                    }
+                ]
+            },
+            agreement = {
+                inputs: [
+                    {
+                        name: 'agree_1',
+                        type: 'checkbox',
+                        text: "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our Privacy Policy.",
+                        links: [{text: 'Privacy Policy', to: '/privacy'}],
+                        groupClass: 'checkbox_text'
+                    },
+                    {
+                        name: 'agree_2',
+                        type: 'checkbox',
+                        text: "By filling out and sending us the registration form you agree with the Terms & Conditions and the Privacy Policy.",
+                        links: [{text: 'Terms & Conditions', to: '/terms'}, {text: 'Privacy Policy', to: '/privacy'}],
+                        groupClass: 'checkbox_text'
+                    }
+                ]
             }
 
         if (this.props.step <= 3) {
             return (
                 <div className={"Regform " + (this.props.class ? this.props.class : '')}>
-                    <div className="steps">
-                        {[1,2,3].map(index => {
-                            if(index <= this.props.step-1) {
-                                return (
-                                    <div className="num check" key={index} index={index} onClick={this.handleBackwards}>✓</div>
-                                )
-                            } else {
-                                return (
-                                    <div className="num" key={index}>{index}</div>
-                                )
-                            }
-                        })}
-                    </div>
                     <div className='inner'>
-                        <div className='form-wrapper one'>
+                        <div className='form-wrapper'>
                             {this.state.errors && <div className="errors">
                                 {this.state.errors}
                             </div>}
+                            <div className="small-input-block">
+                                {
+                                    steps.map((formStep, index) =>
+                                        <div key={index} className={formStep.className} style={{
+                                            transition: 'margin 0.3s ease-out',
+                                            justifyContent: 'center'
+                                        }}>
+
+                                            {(formStep.inputs &&
+
+                                                (material
+                                                        ?
+                                                        <Reginputs
+                                                            {...formStep}
+                                                            trackStartEdit={this.props.trackStartEdit}
+                                                            inputValidation={this.inputValidation}
+                                                            countryCode={this.props.countryCode}
+                                                            form={form}
+                                                            languageManager={languageManager}
+                                                            errors={errors}
+                                                            onChange={form => this.setState({form})}
+                                                            onFocus={key => this.inputFocus(key)} />
+                                                        :
+                                                        <div></div>
+
+                                                ))}
+
+                                           {/* {(formStep.passTest &&
+
+                                                <PassTest
+                                                    {...formStep.passTest}
+                                                    form={form}
+                                                    languageManager={version}
+                                                    onChange={form => this.setState({form}, () => this.inputValidation('password'))}
+                                                    errors={errors}/>
+
+                                            )}*/}
+
+                                            {/*<Button onClick={() => (index + 1 === steps.length) ? this.handleSubmit() : this.handleForward(formStep)} className={formStep.button.className}>{formStep.button.text}</Button>*/}
+
+                                            {(formStep.supportText)
+                                                ?
+                                                <div className={formStep.supportText.className}>
+
+                                                    {(formStep.supportText.img) ? <img src={formStep.supportText.img}/> : <React.Fragment></React.Fragment> }
+                                                    <span>{formStep.supportText.main}</span>
+                                                    {(formStep.supportText.tooltip)
+                                                        ?
+                                                        <span>
+                                                    <Tooltip title={formStep.supportText.tooltip} placement="top">
+                                                        <span style={{textDecoration: 'underline dotted', cursor: 'pointer'}}> more</span>
+                                                    </Tooltip>
+                                                </span> : <React.Fragment></React.Fragment>}
+
+                                                </div> : <React.Fragment></React.Fragment>
+                                            }
+
+                                        </div>)
+                                }
+                                {/*<MaterialInputs
+                                    {...stepone}
+                                    form={this.state.form}
+                                    trackStartEdit={this.props.trackStartEdit}
+                                    languageManager={languageManager}
+                                    errors={this.state.errors}
+                                    onChange={form => this.setState({form})}
+                                    onFocus={() => {}}/>*/}
+                            </div>
                             <Reginputs
-                                {...stepone}
+                                {...steptwo}
                                 form={this.state.form}
                                 trackStartEdit={this.props.trackStartEdit}
                                 languageManager={languageManager}
                                 errors={this.state.errors}
                                 onChange={form => this.setState({form})}
-                                onFocus={() => {}}/>
+                                onFocus={() => {}}
+                            />
+                            <div className="small-input-block">
+                                <IntlTelInput
+                                    preferredCountries={[this.props.countryCode]}
+                                    containerClassName="intl-tel-input"
+                                    inputClassName="inputfield tel"
+                                    defaultCountry={this.state.country_name}
+                                    autoPlaceholder={true}
+                                    separateDialCode={true}
+                                    onSelectFlag={this.handleSelectFlag}
+                                    onPhoneNumberBlur={this.phoneNumberBlur}
+                                    onPhoneNumberChange={(status, value, countryData, number, id) => {
+                                        if (value.length < 15) {
+                                            this.setState({
+                                                tel: value.replace(/^\s+|\s/g, ''),
+                                            })
+                                        }
+                                    }}
+                                    value={tel}
+                                />
+                                <Reginputs
+                                    {...stepthree}
+                                    form={this.state.form}
+                                    trackStartEdit={this.props.trackStartEdit}
+                                    languageManager={languageManager}
+                                    errors={this.state.errors}
+                                    onChange={form => this.setState({form})}
+                                    onFocus={() => {}}
+                                />
+                            </div>
+                            <Reginputs
+                                {...agreement}
+                                form={this.state.form}
+                                trackStartEdit={this.props.trackStartEdit}
+                                languageManager={languageManager}
+                                errors={this.state.errors}
+                                onChange={form => this.setState({form})}
+                                onFocus={() => {}}
+                            />
 
                             <button onClick={this.handleForward} className='start'>{languageManager.button}</button>
                         </div>
-                        <div className='form-wrapper two'>
-                            {/*{this.state.errors && <div className="errors">
-                                {this.state.errors[0]}
-                            </div>}*/}
-                            <div className="forw-wrapper_input">
-                                <input className="inputfield pass" type={this.state.firstPassType} maxLength="8" value={password} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="password" placeholder={languageManager.pass}/>
-                                <span onClick={this.handleClick} data-type="firstPassType" className={this.state.firstPassType === 'password' ? 'show-pass' : 'hide-pass'}></span>
-                            </div>
-                            <div className="help-block">
-                                <div className="help-icon">
-                                    <div className="help-info">
-                                        <p>{languageManager.morebox}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="forw-wrapper_input pass2">
-                                <input className="inputfield pass" type={this.state.secondPassType} maxLength="8" value={confirm_password} onChange={(e) => this.handleStepChange(e.target.name, e.target.value)} name="confirm_password" placeholder={languageManager.pass2}/>
-                                <span onClick={this.handleClick} data-type="secondPassType" className={this.state.secondPassType === 'password' ? 'show-pass' : 'hide-pass'}></span>
-                            </div>
-                            <ul className='req'>
-                                {Object.keys(languageManager.passtest).map((validationRule, index) =>
-                                    <li key={index} className={
-                                        this.state.passwordErrors[validationRule] || !this.state.password.length
-                                            ? 'list'
-                                            : 'ok'
-                                    }>
-                                        {languageManager.passtest[validationRule]}
-                                    </li>
-                                )}
-                            </ul>
-                            <button onClick={this.handleForward} className='start'>{languageManager.button}</button>
-                        </div>
-                        <div className='form-wrapper three'>
-                            {this.state.errors && <div className="errors">
-                                {this.state.errors}
-                            </div>}
-                            <IntlTelInput
-                                preferredCountries={[this.props.countryCode]}
-                                containerClassName="intl-tel-input"
-                                inputClassName="inputfield tel"
-                                defaultCountry={this.state.country_name}
-                                autoPlaceholder={true}
-                                separateDialCode={true}
-                                onSelectFlag={this.handleSelectFlag}
-                                onPhoneNumberBlur={this.phoneNumberBlur}
-                                onPhoneNumberChange={(status, value, countryData, number, id) => {
-                                    if (value.length < 15) {
-                                        this.setState({
-                                            tel: value.replace(/^\s+|\s/g, ''),
-                                        })
-                                    }
-                                }}
-                                value={tel}
-                            />
-                            <button onClick={this.handleForward} className='start' >{languageManager.button_last}</button>
-                        </div>
                     </div>
-                    <div className="error"><Mark className='excl'/><span></span></div>
                 </div>
             )
         }else {

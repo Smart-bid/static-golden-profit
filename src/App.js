@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactQueryParams from 'react-query-params'
 
 import TopSection from './components/TopSection/TopSection'
 import MidSection from './components/MidSection/MidSection'
@@ -59,6 +58,8 @@ export default class App extends Component {
 
     render() {
 
+        let languageManager = this.props.languageManager();
+
         if (this.state.page === 'main') {
             return (
                 <div className='App'>
@@ -69,7 +70,14 @@ export default class App extends Component {
                     <BottomSection
                         languageManager={this.props.languageManager}
                         pageHandler={this.pageHandler}
-                        handleForward={this.handleForward}/>
+                        handleForward={this.handleForward}
+                    />
+                    <div className="privacy-policy">
+                        <div className="privacy-inner">
+                            <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
+                        </div>
+                    </div>
+
                 </div>
             )
         } else {

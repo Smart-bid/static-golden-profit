@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import ua from "../ua.svg";
-import moment from "../../MidSection/Traders/Traders";
 
 
 export default class ModalWindow extends Component {
