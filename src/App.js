@@ -15,6 +15,7 @@ export default class App extends Component {
         this.state = {
             step: 1,
             page: 'main',
+            hide: false
         };
 
         this.handleStep = this.handleStep.bind(this);
@@ -56,7 +57,17 @@ export default class App extends Component {
 
     }
 
+    hidePrivacyBlock = () => {
+        this.setState({
+            hide: true
+        })
+    }
+
     render() {
+
+        const display = {
+            bottom: '-300px'
+        };
 
         let languageManager = this.props.languageManager();
 
@@ -72,9 +83,13 @@ export default class App extends Component {
                         pageHandler={this.pageHandler}
                         handleForward={this.handleForward}
                     />
-                    <div className="privacy-policy">
+                    <div className="privacy-policy" style={(this.state.hide) ? display : {}}>
                         <div className="privacy-inner">
                             <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
+                            <span className="buttons">
+                                <button onClick={this.hidePrivacyBlock} className="btn-ok">ok</button>
+                                <a onClick={() => this.pageHandler('spam')}>Report Ad / Spam</a>
+                            </span>
                         </div>
                     </div>
 
