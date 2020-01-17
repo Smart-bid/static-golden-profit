@@ -30,7 +30,7 @@ export default class FamousNames extends Component {
                         {
                             languageManager.benefits_information.map((item, index) => {
                                 return (
-                                    <div key={index} className="col-sm-4">
+                                    <div key={index} className="col-md-4">
                                         <div className="benefits-block">
                                             <div className="benefits-img">
                                                 <img src={this.state.images[item.img]} alt={item.name} className="img-responsive"/>

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Header from './Header/Header'
 import ModalWindow from "./ModalWindow/ModalWindow";
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
-import Regform  from './Regform/Regform'
+import { Regform }  from 'sb-lp-framework'
 import Ticker  from './Ticker/Ticker'
 import logo from './logo.svg'
 
@@ -97,7 +97,7 @@ export default class TopSection extends Component {
                 <Header languageManager={this.props.languageManager} handleScroll={this.handleScroll.bind(this)}/>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 logo">
+                        <div className="col-lg-6 col-md-6 logo">
                             <img src={logo} alt="GoldenProfit"/>
                         </div>
                         <ModalWindow {...this.props} />
@@ -116,14 +116,13 @@ export default class TopSection extends Component {
                 <div className="top-reg" id="top">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-8 col-md-8 col-sm-12 video-player">
+                            <div className="col-lg-8 col-md-12 video-player">
                                 <VideoPlayer {...this.props}/>
                             </div>
-                            <div className="col-lg-4 col-md-5 col-sm-12 form">
+                            <div className="col-lg-4 col-md-12 form">
                                 <div className="regform" ref={this.regPanel}>
                                     <div className="reg-title"><h3>{languageManager.title_form}</h3></div>
-                                    <Regform {...this.props}
-                                             material={true}
+                                    {/*<Regform {...this.props}
                                              loadingLogo={{
                                                  className: 'loading',
                                                  source: logo
@@ -137,7 +136,7 @@ export default class TopSection extends Component {
                                                      text: 'OK'
                                                  }
                                              }}
-                                    />
+                                    />*/}
                                 </div>
                             </div>
                         </div>

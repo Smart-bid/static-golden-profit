@@ -10,10 +10,10 @@ export default class BottomSection extends Component {
                 <div className="footer">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-3 col-md-3">
+                            <div className="col-lg-3 col-md-3 footer-logo-block">
                                 <img src={logo} alt="logo" className="footer-logo"/>
                             </div>
-                            <div className="col-lg-9 col-md-9">
+                            <div className="col-lg-9 col-md-9 footer-link-block">
                                 <div className="links">
                                     <a onClick={() => this.props.pageHandler('privacy')}>Privacy Policy</a>
                                     <a onClick={() => this.props.pageHandler('terms')}>Terms</a>

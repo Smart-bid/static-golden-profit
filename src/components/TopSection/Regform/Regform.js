@@ -127,68 +127,10 @@ export default class Regform extends Component {
             errors = this.state.errors,
             form = this.state.form,
             resError = this.props.responseError;
-        const {
-          tel
-        } = this.state;
 
-        let languageManager = this.props.languageManager(),
-            stepone = {
-                inputs: [
-                    {
-                        name: 'first_name',
-                        type: 'text',
-                        className: 'inputfield small-input inline',
-                        errorClass: 'inputError'
-                    },
-                    {
-                        name: 'last_name',
-                        type: 'text',
-                        className: 'inputfield small-input inline',
-                        errorClass: 'inputError'
-                    }
-                ]
-            },
-            steptwo = {
-                inputs: [
-                    {
-                        name: 'email',
-                        type: 'email',
-                        className: 'inputfield small-input',
-                        errorClass: 'inputError',
-                        groupClass: 'form_group'
-                    }
-                ]
-            },
-            stepthree = {
-                inputs: [
-                    {
-                        name: 'password',
-                        type: 'password',
-                        className: 'inputfield input_small',
-                        errorClass: 'inputError',
-                        groupClass: 'formClass small right',
-                        listClass: 'req_list'
-                    }
-                ]
-            },
-            agreement = {
-                inputs: [
-                    {
-                        name: 'agree_1',
-                        type: 'checkbox',
-                        text: "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our Privacy Policy.",
-                        links: [{text: 'Privacy Policy', to: '/privacy'}],
-                        groupClass: 'checkbox_text'
-                    },
-                    {
-                        name: 'agree_2',
-                        type: 'checkbox',
-                        text: "By filling out and sending us the registration form you agree with the Terms & Conditions and the Privacy Policy.",
-                        links: [{text: 'Terms & Conditions', to: '/terms'}, {text: 'Privacy Policy', to: '/privacy'}],
-                        groupClass: 'checkbox_text'
-                    }
-                ]
-            }
+        console.log(steps);
+
+        let languageManager = this.props.languageManager();
 
         if (this.props.step <= 3) {
             return (
@@ -200,18 +142,18 @@ export default class Regform extends Component {
                             </div>}
                             <div className="small-input-block">
                                 {
-                                    steps.map((formStep, index) =>
-                                        <div key={index} className={formStep.className} style={{
+                                    steps.map((steps, index) =>
+                                        <div key={index} className={steps.className} style={{
                                             transition: 'margin 0.3s ease-out',
                                             justifyContent: 'center'
                                         }}>
 
-                                            {(formStep.inputs &&
+                                            {(steps.inputs &&
 
                                                 (material
                                                         ?
                                                         <Reginputs
-                                                            {...formStep}
+                                                            {...steps}
                                                             trackStartEdit={this.props.trackStartEdit}
                                                             inputValidation={this.inputValidation}
                                                             countryCode={this.props.countryCode}
@@ -238,16 +180,16 @@ export default class Regform extends Component {
 
                                             {/*<Button onClick={() => (index + 1 === steps.length) ? this.handleSubmit() : this.handleForward(formStep)} className={formStep.button.className}>{formStep.button.text}</Button>*/}
 
-                                            {(formStep.supportText)
+                                            {(steps.supportText)
                                                 ?
-                                                <div className={formStep.supportText.className}>
+                                                <div className={steps.supportText.className}>
 
-                                                    {(formStep.supportText.img) ? <img src={formStep.supportText.img}/> : <React.Fragment></React.Fragment> }
-                                                    <span>{formStep.supportText.main}</span>
-                                                    {(formStep.supportText.tooltip)
+                                                    {(steps.supportText.img) ? <img src={steps.supportText.img}/> : <React.Fragment></React.Fragment> }
+                                                    <span>{steps.supportText.main}</span>
+                                                    {(steps.supportText.tooltip)
                                                         ?
                                                         <span>
-                                                    <Tooltip title={formStep.supportText.tooltip} placement="top">
+                                                    <Tooltip title={steps.supportText.tooltip} placement="top">
                                                         <span style={{textDecoration: 'underline dotted', cursor: 'pointer'}}> more</span>
                                                     </Tooltip>
                                                 </span> : <React.Fragment></React.Fragment>}
@@ -266,7 +208,7 @@ export default class Regform extends Component {
                                     onChange={form => this.setState({form})}
                                     onFocus={() => {}}/>*/}
                             </div>
-                            <Reginputs
+                            {/*<Reginputs
                                 {...steptwo}
                                 form={this.state.form}
                                 trackStartEdit={this.props.trackStartEdit}
@@ -312,7 +254,7 @@ export default class Regform extends Component {
                                 errors={this.state.errors}
                                 onChange={form => this.setState({form})}
                                 onFocus={() => {}}
-                            />
+                            />*/}
 
                             <button onClick={this.handleForward} className='start'>{languageManager.button}</button>
                         </div>

@@ -15,7 +15,6 @@ export default class ModalWindow extends Component {
     componentDidMount() {
         let languageManager = this.props.languageManager();
         const namesElementsArray = languageManager.customers_name;
-        console.log(namesElementsArray);
         this.setState({
             nameArr: namesElementsArray[1]
         }, () => {
@@ -36,7 +35,7 @@ export default class ModalWindow extends Component {
     render() {
         let languageManager = this.props.languageManager();
         return (
-            <div className="col-lg-6 hidden-block">
+            <div className="col-lg-6 col-md-6 hidden-block">
                 <div id="modal-window" className={`show ` + this.state.show_customer_name}>
                     <img src={ua} alt=""/>
                     <div className="name">

@@ -24,6 +24,9 @@ p {
 }
 .container {
   padding: 0;
+  @media (max-width: 764px) {
+    padding: 0 15px;
+  }
 }
 .App {
   position: relative;
@@ -52,6 +55,11 @@ p {
         margin-left: 3em;
         min-width: 160px;
         text-align: center;
+        @media (max-width: 500px) {
+          margin-left: 0;
+          margin-top: 15px;
+          display: block;
+        }
       }
       .btn-ok {
         display: block;
@@ -66,9 +74,13 @@ p {
         width: 100%;
         text-transform: uppercase;
         margin-bottom: 10px;
+        outline: none;
         &:hover {
           background: #dbbf46;
         }
+      }
+      @media (max-width: 500px) {
+        display: block;
       }
     }
   }

@@ -64,13 +64,10 @@ export default class App extends Component {
     }
 
     render() {
-
         const display = {
-            bottom: '-300px'
+            bottom: '-800px'
         };
-
         let languageManager = this.props.languageManager();
-
         if (this.state.page === 'main') {
             return (
                 <div className='App'>
@@ -87,12 +84,11 @@ export default class App extends Component {
                         <div className="privacy-inner">
                             <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
                             <span className="buttons">
-                                <button onClick={this.hidePrivacyBlock} className="btn-ok">ok</button>
-                                <a onClick={() => this.pageHandler('spam')}>Report Ad / Spam</a>
-                            </span>
+                                            <button onClick={this.hidePrivacyBlock} className="btn-ok">ok</button>
+                                            <a onClick={() => this.pageHandler('spam')}>Report Ad / Spam</a>
+                                        </span>
                         </div>
                     </div>
-
                 </div>
             )
         } else {

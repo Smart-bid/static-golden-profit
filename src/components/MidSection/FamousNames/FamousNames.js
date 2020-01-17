@@ -34,7 +34,7 @@ export default class FamousNames extends Component {
                         {
                             languageManager.famous_body.map((item, index) => {
                                 return (
-                                    <div key={index} className="col-sm-6 famous-people">
+                                    <div key={index} className="col-md-6 famous-people">
                                         <div className="single-person">
                                             <h3>{item.name}</h3>
                                             <p>{item.text}</p>

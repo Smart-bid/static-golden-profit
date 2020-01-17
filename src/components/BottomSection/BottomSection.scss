@@ -13,6 +13,9 @@
             justify-content: flex-end;
             align-items: center;
             height: 100%;
+          @media (max-width: 764px) {
+            justify-content: center;
+          }
             a, span {
                 color: #969696;
                 font-weight: 500;
@@ -55,5 +58,11 @@
                 }
             }
         }
+      .footer-logo-block {
+        @media (max-width: 764px) {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
     }
 }

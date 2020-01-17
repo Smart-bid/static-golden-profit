@@ -7,10 +7,10 @@ const Invest = props => {
         <div className="Invest">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-9 offset-md-3">
+                    <div className="col-lg-9 offset-lg-3">
                         <h2 className="invest-title">{languageManager.invest_main_title}</h2>
                     </div>
-                    <div className="col-md-9 offset-md-3 steps-block">
+                    <div className="col-lg-9 offset-lg-3 steps-block">
                         <div className="row">
                             {
                                 languageManager.invest_descriptions.map((item, index) => {
@@ -25,7 +25,7 @@ const Invest = props => {
                             }
                         </div>
                     </div>
-                    <div className="col-md-9 offset-md-3">
+                    <div className="col-lg-9 offset-lg-3">
                         <a href="#" className="blue-btn"><span>{languageManager.blue_btn}</span></a>
                     </div>
                 </div>
