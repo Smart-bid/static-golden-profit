@@ -4,6 +4,7 @@ import TopSection from './components/TopSection/TopSection'
 import MidSection from './components/MidSection/MidSection'
 import BottomSection from './components/BottomSection/BottomSection'
 import Page from './pages/Page'
+import { BrowserRouter as Router} from "react-router-dom";
 
 // Pages
 import * as Pages from './pages'
@@ -70,26 +71,28 @@ export default class App extends Component {
         let languageManager = this.props.languageManager();
         if (this.state.page === 'main') {
             return (
-                <div className='App'>
-                    <TopSection {...this.props} handleStep={this.handleStep} step={this.state.step}/>
+                <Router>
+                    <div className='App'>
+                        <TopSection {...this.props} handleStep={this.handleStep} step={this.state.step}/>
 
-                    <MidSection languageManager={this.props.languageManager}/>
+                        <MidSection {...this.props}/>
 
-                    <BottomSection
-                        languageManager={this.props.languageManager}
-                        pageHandler={this.pageHandler}
-                        handleForward={this.handleForward}
-                    />
-                    <div className="privacy-policy" style={(this.state.hide) ? display : {}}>
-                        <div className="privacy-inner">
-                            <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
-                            <span className="buttons">
+                        <BottomSection
+                            languageManager={this.props.languageManager}
+                            pageHandler={this.pageHandler}
+                            handleForward={this.handleForward}
+                        />
+                        <div className="privacy-policy" style={(this.state.hide) ? display : {}}>
+                            <div className="privacy-inner">
+                                <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
+                                <span className="buttons">
                                             <button onClick={this.hidePrivacyBlock} className="btn-ok">ok</button>
                                             <a onClick={() => this.pageHandler('spam')}>Report Ad / Spam</a>
                                         </span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Router>
             )
         } else {
             return (

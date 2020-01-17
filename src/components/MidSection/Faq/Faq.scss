@@ -14,6 +14,7 @@
     border-radius: 4px;
     margin-bottom: 15px;
     overflow: hidden;
+    padding: 0;
   }
   .accordion>.card:not(:first-of-type):not(:last-of-type) {
     border-bottom: 1px solid #e8dfbb;
@@ -74,5 +75,6 @@
   }
   .card-body {
     font-size: 15px;
+    padding: 1rem;
   }
 }

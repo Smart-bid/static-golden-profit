@@ -20,27 +20,18 @@
     "password": "Password",
     "pass2": "Confirm Password",
     "button": "Get Access Now",
-    "agreement_first": [
-      "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our ",
-      "Privacy Policy"
-    ],
-    "agreement_second": [
-      "By filling out and sending us the registration form you agree with the ",
-      "Terms & Conditions",
-      " and the ",
-      "Privacy Policy"
-    ],
+    "agreement_first": "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our Privacy Policy",
+    "agreement_second": "By filling out and sending us the registration form you agree with the Terms & Conditions and the Privacy Policy",
     "button_last": "REGISTER NOW",
-    "passtest": {
-      "invalidlength": "The password must be 8 characters long.",
-      "nolowercase": "Must contain at least 1 letter.",
-      "nonumber": "Must contain at least 1 number.",
-      "nouppercase": "Must contain at least 1 capital letter."
-    },
+    "passtest": [
+      "The password must be 8 characters long.",
+      "Must not contain special characters.",
+      "Must contain at least 1 letter.",
+      "Must contain at least 1 capital letter.",
+      "Must contain at least 1 number."
+    ],
     "more_title": [
-      "Your data is always protected with us.",
-      "You can change your mind anytime by...",
-      "more"
+      "Your data is always protected with us.\nYou can change your mind anytime by...\n"
     ],
     "more_decription": "You can change your mind at any time by clicking on the unsubscribe link in the footer of any email you receive from us. We will treat your information with respect. By clicking above, you agree that we may process your information in accordance with these terms.",
     "join_title": "With gold prices rising, there’s never been a better time to invest.",

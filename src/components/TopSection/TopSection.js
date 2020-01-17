@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Header from './Header/Header'
 import ModalWindow from "./ModalWindow/ModalWindow";
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
-import { Regform }  from 'sb-lp-framework'
+import Regform  from './Regform/Regform'
 import Ticker  from './Ticker/Ticker'
 import logo from './logo.svg'
 
@@ -34,19 +34,19 @@ export default class TopSection extends Component {
                         type: 'text',
                         className: 'input_small',
                         errorClass: 'inputError',
-                        groupClass: 'formClass small left'
+                        groupClass: 'formClass left'
                     },
                     {
                         name: 'last_name',
                         type: 'text',
                         className: 'input_small',
                         errorClass: 'inputError',
-                        groupClass: 'formClass small right'
+                        groupClass: 'formClass right'
                     },
                     {
                         name: 'email',
                         type: 'email',
-                        className: 'input_small',
+                        className: 'input_big',
                         errorClass: 'inputError',
                         groupClass: 'formClass large'
                     },
@@ -68,14 +68,14 @@ export default class TopSection extends Component {
                     {
                         name: 'agree_1',
                         type: 'checkbox',
-                        text: "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our Privacy Policy.",
+                        text: languageManager.agreement_first,
                         links: [{text: 'Privacy Policy', to: '/'}],
                         groupClass: 'checkbox_text'
                     },
                     {
                         name: 'agree_2',
                         type: 'checkbox',
-                        text: "By filling out and sending us the registration form you agree with the Terms & Conditions and the Privacy Policy.",
+                        text: languageManager.agreement_second,
                         links: [{text: 'Terms & Conditions', to: '/terms'}, {text: 'Privacy Policy', to: '/privacy'}],
                         groupClass: 'checkbox_text'
                     }
@@ -87,8 +87,8 @@ export default class TopSection extends Component {
                 supportText: {
                     className: 'support_text',
                     image: {},
-                    main: 'Lorem ipsum',
-                    tooltip: 'Hello world'
+                    main: languageManager.more_title[0],
+                    tooltip: languageManager.more_decription
                 }
             }
         ];
@@ -122,12 +122,12 @@ export default class TopSection extends Component {
                             <div className="col-lg-4 col-md-12 form">
                                 <div className="regform" ref={this.regPanel}>
                                     <div className="reg-title"><h3>{languageManager.title_form}</h3></div>
-                                    {/*<Regform {...this.props}
+                                    <Regform {...this.props}
                                              loadingLogo={{
                                                  className: 'loading',
                                                  source: logo
                                              }}
-                                             formTitle={{text: 'CHANGE YOUR LIFE TODAY!', className: 'form_title'}}
+                                             material={true}
                                              formSteps={steps}
                                              responseError={{
                                                  className: 'resError',
@@ -136,7 +136,7 @@ export default class TopSection extends Component {
                                                      text: 'OK'
                                                  }
                                              }}
-                                    />*/}
+                                    />
                                 </div>
                             </div>
                         </div>
