@@ -153,18 +153,18 @@ export default function MaterialInputs(props) {
                                         >
                                         {({ TransitionProps }) => (   
                                             <Fade {...TransitionProps} timeout={350}>
-                                                <List className={input.listClass} style={{backgroundColor: '#fff', width: '80%', border: '2px solid', borderColor: (props.errors.hasOwnProperty('password') ? '#f0482a' : '#8cd32f')}}>
+                                                <List className={input.listClass} style={{backgroundColor: '#fff', width: '100%', right: '0', border: '2px solid', borderColor: (props.errors.hasOwnProperty('password') ? '#f0482a' : '#8cd32f')}}>
                                                     {Object.keys(passtest).map(key =>
                                                         (props.errors.hasOwnProperty('password') && (props.errors.password[key] || props.errors.password.empty))
                                                         ? 
-                                                        <ListItem key={key} style={{ color: '#f0482a' }}>
+                                                        <ListItem key={key} style={{ color: '#f0482a', fontSize: '14px', marginBottom: '0' }}>
                                                             <ListItemIcon >
                                                                 <CloseIcon style={{ color: '#f0482a' }}/>
                                                             </ListItemIcon>
                                                             {passtest[key]}
                                                         </ListItem>
                                                         :
-                                                        <ListItem key={key} style={{ color: '#8cd32f' }}>
+                                                        <ListItem key={key} style={{ color: '#8cd32f', fontSize: '14px', marginBottom: '0' }}>
                                                             <ListItemIcon >
                                                                 <CheckIcon style={{ color: '#8cd32f' }}/>
                                                             </ListItemIcon>
