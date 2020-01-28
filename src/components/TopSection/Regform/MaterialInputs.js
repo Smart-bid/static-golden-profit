@@ -77,7 +77,7 @@ export default function MaterialInputs(props) {
                                     key={input.name}
                                     className={input.groupClass}>
 
-                                    <InputLabel style={{backgroundColor: '#fff'}} htmlFor={input.name}>{input.name.restr()}</InputLabel>
+                                    <InputLabel style={{backgroundColor: '#fff'}} htmlFor={input.name}>{props.languageManager[input.name]}</InputLabel>
 
                                     <OutlinedInput
                                         className={input.className}
@@ -99,7 +99,7 @@ export default function MaterialInputs(props) {
 
                                     <MuiPhoneNumber
                                         className={input.className}
-                                        label="Phone"
+                                        label={props.languageManager[input.name]}
                                         aria-describedby="feebback"
                                         variant='outlined'
                                         id={input.name}
@@ -120,7 +120,7 @@ export default function MaterialInputs(props) {
                                         variant='outlined' 
                                         className={input.groupClass}>
 
-                                            <InputLabel htmlFor={input.name}>{input.name.restr()}</InputLabel>
+                                            <InputLabel htmlFor={input.name}>{props.languageManager[input.name]}</InputLabel>
 
                                             <OutlinedInput
                                                 className={input.className}
@@ -144,7 +144,8 @@ export default function MaterialInputs(props) {
                                                     </InputAdornment>
                                                 }
                                             />
-                                    <Popper 
+                                    <Popper
+                                        className="popper"
                                         open={reqOpen}
                                         anchorEl={reqlist ? reqlist.parentElement.parentElement : null}
                                         style={{zIndex: 10}}
@@ -153,18 +154,18 @@ export default function MaterialInputs(props) {
                                         >
                                         {({ TransitionProps }) => (   
                                             <Fade {...TransitionProps} timeout={350}>
-                                                <List className={input.listClass} style={{backgroundColor: '#fff', width: '100%', right: '0', border: '2px solid', borderColor: (props.errors.hasOwnProperty('password') ? '#f0482a' : '#8cd32f')}}>
+                                                <List className={input.listClass} style={{backgroundColor: '#fff', width: '100%', border: '2px solid', borderColor: (props.errors.hasOwnProperty('password') ? '#f0482a' : '#8cd32f')}}>
                                                     {Object.keys(passtest).map(key =>
                                                         (props.errors.hasOwnProperty('password') && (props.errors.password[key] || props.errors.password.empty))
                                                         ? 
-                                                        <ListItem key={key} style={{ color: '#f0482a', fontSize: '14px', marginBottom: '0' }}>
+                                                        <ListItem key={key} style={{ color: '#f0482a', fontSize: '14px', padding: '10px' }}>
                                                             <ListItemIcon >
                                                                 <CloseIcon style={{ color: '#f0482a' }}/>
                                                             </ListItemIcon>
                                                             {passtest[key]}
                                                         </ListItem>
                                                         :
-                                                        <ListItem key={key} style={{ color: '#8cd32f', fontSize: '14px', marginBottom: '0' }}>
+                                                        <ListItem key={key} style={{ color: '#8cd32f', fontSize: '14px', padding: '10px' }}>
                                                             <ListItemIcon >
                                                                 <CheckIcon style={{ color: '#8cd32f' }}/>
                                                             </ListItemIcon>

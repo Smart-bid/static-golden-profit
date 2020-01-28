@@ -12,16 +12,19 @@
       "Ivy",
       "Evelin"
     ],
+    "flag_img": "ua",
     "status": " joined",
     "title_form": "CHANGE YOUR LIFE TODAY!",
     "first_name": "First name",
     "last_name": "Last name",
     "email": "Email",
     "password": "Password",
-    "pass2": "Confirm Password",
+    "phone_number": "Phone",
     "button": "Get Access Now",
     "agreement_first": "I agree to the processing of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our Privacy Policy",
     "agreement_second": "By filling out and sending us the registration form you agree with the Terms & Conditions and the Privacy Policy",
+    "terms_links": "Terms & Conditions",
+    "privacy_links": "Privacy Policy",
     "button_last": "REGISTER NOW",
     "passtest": [
       "The password must be 8 characters long.",
@@ -202,6 +205,215 @@
     "bottom_info": [
       "We use cookies to understand how you use our site and to improve your experience. This includes personalizing content and advertising. By continuing to use our site, you accept our use of cookies, revised Privacy Policy and Terms of Use. This website is an Advertorial. ",
       "More information"
+    ]
+  },
+  "da": {
+    "header_title": "– Tekstreklame –",
+    "header_subtitle": "Vi har fået et hidtil uset antal nye brugere.",
+    "title": "Opdag din Personlige Guldmine",
+    "subtitle": "Slut dig til tusindvis af mennesker som investerer i guldmarkedet!",
+    "customers_name": [
+      "Amelia",
+      "Elsie",
+      "Fred",
+      "Henry",
+      "Ivy",
+      "Evelin"
+    ],
+    "flag_img": "dk",
+    "status": " tilmeldt",
+    "title_form": "LAV OM PÅ DIT LIV I DAG!",
+    "first_name": "Fornavn",
+    "last_name": "Efternavn",
+    "email": "Email",
+    "password": "Kodeord",
+    "phone_number": "Telefonnummer",
+    "pass2": "Confirm Password",
+    "button": "Kom i gang nu",
+    "agreement_first": "Jeg giver mit samtykke til at min e-mailadresse lagres med det formål, at jeg kan modtage information og kommercielle tilbud om tradingsoftware og -platforme.",
+    "agreement_second": "Jeg erklærer mig enig i disse Vilkår og Betingelser og denne Privatlivspolitik",
+    "terms_links": "Vilkår og Betingelser",
+    "privacy_links": "Privatlivspolitik",
+    "button_last": "Kom i gang nu",
+    "passtest": [
+      "Kodeordet skal være på 8 tegn.",
+      "Må ikke indeholde specielle tegn.",
+      "Skal indeholde mindst 1 små bogstav.",
+      "Skal indeholde mindst 1 stort bogstav.",
+      "Skal indeholde mindst 1 tal."
+    ],
+    "more_title": [
+      "Du kan skifte mening til enhver tid ved at klikke på afmeldelseslinket i.."
+    ],
+    "more_decription": "bunden af enhver e-mail, du modtager fra os. Vi vil behandle dine data med respekt. Ved at klikke ovenfor giver du samtykke til, at vi må bearbejde dine data i overensstemmelse med disse vilkår.",
+    "join_title": "Som guldpriserne stiger, har der aldrig været et bedre tidspunkt at investere på.",
+    "join_subtitle": "Tilmeld dig i dag og hold dine penge sikret ved at investere i guld!",
+    "join_description": "Guld har været målestokken for rigdom gennem hundredevis af år, og i takt med at industrier og teknologier udvikles, udgør guld stadig en sold standard for global finans. Efter økonomikrisen i 2008 var guld en af de få industrier som forblev stærke, og dets lange historie og fysiske værdi betyder, at det vil overleve enhver markedsnedgang.",
+    "invest_main_title": "Investér i guld med Golden Profit",
+    "invest_descriptions": [
+      {
+        "step": "TRIN",
+        "name": "Tilmeld dig",
+        "text": [
+          "Det tager kun få minutter at registrere din konto i Golden Profits strømlinede tilmeldingssystem. Udfyld blot dine detaljer og vi klarer resten.",
+          ""
+        ]
+      },
+      {
+        "step": "TRIN",
+        "name": "Investér",
+        "text": [
+          "Du vil blive kontaktet af en af vores personlige mæglere, som fortæller dig præcis hvad du skal gøre for at foretage din første investering.",
+          "Det påkrævede mindstebeløb, der skal indbetales er 1639 kr."
+        ]
+      },
+      {
+        "step": "TRIN",
+        "name": "Handl",
+        "text": [
+          "Når du har aktiveret din konto ved at indsætte et depositum, vil du kunne begynde at investere i din fremtid.",
+          ""
+        ]
+      }
+    ],
+    "blue_btn": "Register her",
+    "trade_title": "Trenden som taler for sig selv",
+    "trade_description": "I takt med at flere og flere investorer begynder at genetablere en interesse i guld, er priserne fløjet i vejret. Dette skyldes, at guld tilbyder mere sikkerhed end alle andre råvarer, og i en verden af voksende økonomisk ustabilitet er sikkerhed svær at finde. Kig på skemaet herunder for at se, hvor meget guldpriserne er steget i de sidste 12 måneder.",
+    "famous_title": "Berømte navne indenfor trading",
+    "famous_description": "Der er mange store navne indenfor trading. Her er hvad nogle af de mest berømte tradere havde at sige.",
+    "famous_body": [
+      {
+        "img": "elder",
+        "name": "Alexander Elder",
+        "text": "Du kan være fri. Du kan bo og arbejde hvor som helst i verden. Du kan være uafhængig af rutiner og slippe for at stå til ansvar overfor nogen."
+      },
+      {
+        "img": "seykota",
+        "name": "Ed Seykota",
+        "text": "Alle får det de vil have ud af markedet, uanset om de vinder eller taber. Nogle mennesker ser ud til at kunne lide at tabe, så de vinder ved at tabe penge."
+      },
+      {
+        "img": "oneil",
+        "name": "William O’Neil",
+        "text": "Det der ser ud til at være for højt og risikabelt for flertallet, går generelt højere, og det der ser lavt og billigt ud, går generelt lavere."
+      },
+      {
+        "img": "buffet",
+        "name": "Warren Buffett",
+        "text": "Du behøver ikke at være raketforsker. Investering er ikke et spil, hvor fyren med en IQ på 160 slår fyren med en IQ på 130."
+      }
+    ],
+    "benefits_title": "Fordele ved Online Handel",
+    "benefits_subtitle": "Det er den bedste måde at investere dine penge på",
+    "benefits_information": [
+      {
+        "img": "accurate",
+        "title": "Nøjagtig Handel",
+        "description": "Brug Golden PROFITs live handelsopdateringer, som opdateres hvert minut, til at træffe de rigtige beslutninger hver eneste gang du handler."
+      },
+      {
+        "img": "cutting",
+        "title": "Den Nyeste Teknologi",
+        "description": "Golden PROFIT bruger den nyeste handelsmaskine for at holde alle dine handler kørende glat og effektivt og for at sikre, at du har den bedst mulige beskyttelse."
+      },
+      {
+        "img": "trading",
+        "title": "Handel du kan Stole på",
+        "description": "Golden PROFIT er blandt verdens førende inden for online handel og er anerkendt globalt for deres intuitive design og brugervenlige platform."
+      }
+    ],
+    "table_title": "Online handlende",
+    "table_head": [
+      "Bruger",
+      "Tidspunkt",
+      "Registreret"
+    ],
+    "table_inner": [
+      {
+        "name": "J******",
+        "img": "register"
+      },
+      {
+        "name": "K******",
+        "img": "register"
+      },
+      {
+        "name": "S******",
+        "img": "register"
+      },
+      {
+        "name": "M******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "L******",
+        "img": "register"
+      },
+      {
+        "name": "N******",
+        "img": "register"
+      },
+      {
+        "name": "B******",
+        "img": "register"
+      },
+      {
+        "name": "O******",
+        "img": "register"
+      },
+      {
+        "name": "P******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "G******",
+        "img": "register"
+      }
+    ],
+    "faq_title": "Ofte Stillede Spørgsmål",
+    "faq_question": [
+      {
+        "question": "Hvor meget kan jeg tjene?",
+        "answer": "Din profit afhænger af dine beslutninger og inputs. De handlende, som kombinerer deres renter og foretager dyrere handeler, står til at tjene meget mere end dem som handler på lavere niveauer. Men det kommer dog helt an på, hvordan du ønsker at handle."
+      },
+      {
+        "question": "Skal jeg have nogen handelserfaring?",
+        "answer": "Golden PROFIT er designet til handlende på alle niveauer og kan give dig de evner og den selvtillid du behøver for at handle på højt niveau. Platformen inkluderer de informationer du behøver for at komme i gang med at handle, hvad enten du er nybegynder eller professionel handlende."
+      },
+      {
+        "question": "Hvor meget koster det?",
+        "answer": "Vores platform er helt gratis at bruge. Alt hvad du behøver er en startkapital på 250$ (~1625 kr), som du kan investere og handle med."
+      },
+      {
+        "question": "Hvor mange medlemmer er der?",
+        "answer": "Vi har over 250.000 medlemmer som bruger vores services verden over."
+      },
+      {
+        "question": "Hvilke virksomheder kan jeg bruge?",
+        "answer": "Du kan handle med alle offentlige virksomheder fra alle de største børser i verden. Hvis du har hørt om virksomheden, kan du handle med den!"
+      }
+    ],
+    "second_form": "Begynd dit nye liv Nu",
+    "disclaimer": [
+      "VIGTIGT: ",
+      "Indtjening og juridiske ansvarsfraskrivelser",
+      "Fortjeneste- og indkomstrepræsentationer foretaget af Golden Profit, (herefter benævnt “denne webside”) bruges kun som stræbemål for dit indtjeningspotentiale. Den succes som personerne i vidnesbyrdene og andre eksempler oplever er ekstraordinære resultater og derfor ikke ment som en garanti for at du eller andre kommer til at opnå de samme resultater. Individuelle resultater varierer og afhænger udelukkende af din anvendelse af Golden Profit.",
+      "Denne webside er ikke ansvarlig for dine handlinger. Du har eneansvaret for dine handlinger og beslutninger, når du bruger vores produkter og tjenester, og derfor bør du altid udvise forsigtighed og rettidig omhu. Du accepterer at denne webside ikke på nogen måde er ansvarlig for følgerne af anvendelsen af vores produkter og tjenester. Se vores betingelser og vilkår for hele vores ansvarsfraskrivelse og andre restriktioner.",
+      "Denne webside kan modtage betaling for produkter og tjenester de anbefaler til dig. Hvis du ikke ønsker at denne webside skal få betaling for en anbefaling, anbefaler vi at du søger online efter et lignende produkt gennem et link fra en ikke-samhørende partner.",
+      "*Vidnesbyrd:",
+      "Alle personer, informationer og begivenheder der er skildret på denne webside, er udelukkende fiktive. Enhver lighed med virkelige begivenheder eller personer, levende eller døde, er helt tilfældig."
+    ],
+    "bottom_info": [
+      "Vi bruger cookies til at forstå hvordan du bruger vores side og til at forbedre din oplevelse. Det omfatter personlig tilpasning af indhold og annoncering. Ved at fortsætte med at bruge vores side accepterer du vores brug af cookies samt vores reviderede Fortrolighedspolitik og Betingelser for brug. Denne webside er en tekstreklame. ",
+      "Mere information"
     ]
   }
 }

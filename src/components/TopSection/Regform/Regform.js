@@ -26,7 +26,11 @@ class Regform extends Component {
 
         this.state = {
             form: {},
-            errors: {},
+            errors: {
+                password: {
+                    empty: true
+                }
+            },
             step: 1
         }
 

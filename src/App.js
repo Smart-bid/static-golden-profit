@@ -59,10 +59,9 @@ export default class App extends Component {
     }
 
     hidePrivacyBlock = () => {
-        this.setState({
-            hide: true
-        })
-    }
+        this.setState({ rerender: ''})
+        document.cookie = "privacy=agree; max-age=1800000"
+    };
 
     render() {
         const display = {
@@ -82,7 +81,7 @@ export default class App extends Component {
                             pageHandler={this.pageHandler}
                             handleForward={this.handleForward}
                         />
-                        <div className="privacy-policy" style={(this.state.hide) ? display : {}}>
+                        <div className="privacy-policy" style={(document.cookie.indexOf('privacy') !== -1) ? display : {}}>
                             <div className="privacy-inner">
                                 <span>{languageManager.bottom_info[0]}<a onClick={() => this.pageHandler('privacy')}>{languageManager.bottom_info[1]}</a></span>
                                 <span className="buttons">
