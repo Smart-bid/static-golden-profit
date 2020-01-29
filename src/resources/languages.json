@@ -1257,5 +1257,635 @@
       "Utilizamos cookies para saber cómo utiliza nuestra web y mejorar su experiencia. Esto incluye publicidad y contenidos personalizados. Al continuar utilizando nuestra web, acepta el uso de cookies, la política de privacidad actualizada y las condiciones de uso. Este sitio web es un publirreportaje. ",
       "Más información"
     ]
+  },
+  "it": {
+    "header_title": "– Advertorial –",
+    "header_subtitle": "Stiamo acquisendo un numero senza precedenti di nuovi utenti.",
+    "title": "Scopri la tua miniera d'oro personale",
+    "subtitle": "Unisciti a migliaia di persone che investono nel mercato dell'oro!",
+    "customers_name": [
+      "Amelia",
+      "Elsie",
+      "Fred",
+      "Henry",
+      "Ivy",
+      "Evelin"
+    ],
+    "flag_img": "it",
+    "status": " ha aderito",
+    "video_title": "Tocca per guardare e scoprire il segreto!",
+    "title_form": "CAMBIA LA TUA VITA OGGI STESSO!",
+    "first_name": "Nome",
+    "last_name": "Cognome",
+    "email": "Email",
+    "password": "Password",
+    "phone_number": "Telefono",
+    "pass2": "Confirm Password",
+    "button": "Inizia ora",
+    "agreement_first": "Accetto che il mio indirizzo e-mail venga memorizzato allo scopo di ricevere informazioni e offerte commerciali su software e piattaforme di trading.",
+    "agreement_second": "Accetto le Condizioni generali e l'Informativa sulla privacy",
+    "terms_links": "Condizioni generali",
+    "privacy_links": "l'Informativa sulla privacy",
+    "button_last": "Inizia ora",
+    "passtest": [
+      "La password contenere tra i 8 caratteri.",
+      "Non deve contenere caratteri speciali.",
+      "Deve contenere almeno 1 lettera.",
+      "Deve contenere almeno 1 lettera maiuscola.",
+      "Deve contenere almeno 1 numero."
+    ],
+    "more_title": [
+      "Potrai cambiare idea in qualsiasi momento cliccando sul link di annullamento..."
+    ],
+    "more_decription": "dell'iscrizione presente nel piè di pagina di ogni e-mail che riceverai da noi. Tratteremo i tuoi dati con rispetto. Cliccando sopra, acconsenti al trattamento dei tuoi dati da parte nostra in conformità alle presenti condizioni.",
+    "join_title": "Con l'aumento del prezzo dell'oro, non c'è mai stato un momento migliore per investire.",
+    "join_subtitle": "Iscriviti oggi e mantieni i tuoi soldi al sicuro investendo in oro!",
+    "join_description": "Per centinaia di anni, l'oro è stato il principale indicatore di ricchezza, e con l'avanzare delle industrie e delle tecnologie, esso rappresenta ancora uno standard solido per le finanze globali. Dopo il crollo finanziario del 2008, l'oro è stato uno dei pochi settori che è rimasto forte, e la sua lunga storia e il suo valore fisico indicano che sopravviverà ad ogni crisi del mercato.",
+    "invest_main_title": "Investi in oro con Golden Profit",
+    "invest_descriptions": [
+      {
+        "step": "PASSAGGIO",
+        "name": "Registrati",
+        "text": [
+          "Bastano pochi minuti per registrare il tuo account con il sistema di registrazione semplificato di Golden Profit. Basterà inserire i tuoi dati e noi faremo il resto.",
+          ""
+        ]
+      },
+      {
+        "step": "PASSAGGIO",
+        "name": "Investi",
+        "text": [
+          "Uno dei nostri broker personali si metterà in contatto con te e ti dirà esattamente cosa devi fare per effettuare il tuo primo investimento.",
+          "L'importo minimo richiesto da depositare è di €250."
+        ]
+      },
+      {
+        "step": "PASSAGGIO",
+        "name": "Fai trading",
+        "text": [
+          "Dopo aver attivato il tuo account, depositando i tuoi fondi, sarai in grado di iniziare a investire nel tuo futuro.",
+          ""
+        ]
+      }
+    ],
+    "blue_btn": "Registrati qui ",
+    "trade_title": "Il trend parla da solo",
+    "trade_description": "Mentre sempre più investitori cominciano a riacquistare interesse per l'oro, i prezzi sono aumentati vertiginosamente. Questo perché l'oro offre una maggiore sicurezza rispetto a qualsiasi altra materia prima, e in un mondo in cui i crescenti sconvolgimenti finanziari sono in crescita, la sicurezza non si trova facilmente. Guarda la tabella qui sotto per vedere quanto è aumentato il prezzo dell'oro negli ultimi 12 mesi.",
+    "famous_title": "Nomi famosi nel trading",
+    "famous_description": "Ci sono molti grandi nomi nel trading. Ecco cosa hanno da dire alcuni dei trader più famosi.",
+    "famous_body": [
+      {
+        "img": "elder",
+        "name": "Alexander Elder",
+        "text": "Puoi essere libero. Puoi vivere e lavorare in qualsiasi parte del mondo. Puoi essere indipendente dalla routine e non rispondere a nessuno."
+      },
+      {
+        "img": "seykota",
+        "name": "Ed Seykota",
+        "text": "Che si vinca o si perda, ognuno ottiene ciò che vuole dal mercato. Alcune persone sembrano voler perdere, quindi vincono perdendo denaro."
+      },
+      {
+        "img": "oneil",
+        "name": "William O’Neil",
+        "text": "Ciò che sembra troppo rischioso per la maggioranza generalmente va più in alto, e ciò che sembra economico generalmente va più in basso."
+      },
+      {
+        "img": "buffet",
+        "name": "Warren Buffett",
+        "text": "Non è necessario essere uno scienziato missilistico. Investire non è un gioco in cui il tipo con un QI di 160 batte il tipo con un QUI di 130."
+      }
+    ],
+    "benefits_title": "Vantaggi del trading online",
+    "benefits_subtitle": "È il modo migliore per investire i tuoi soldi",
+    "benefits_information": [
+      {
+        "img": "accurate",
+        "title": "Trading accurato",
+        "description": "Utilizza gli aggiornamenti in tempo reale di Golden PROFIT per prendere le decisioni giuste ogni volta che fai trading."
+      },
+      {
+        "img": "cutting",
+        "title": "Tecnologia all'avanguardia",
+        "description": "Golden PROFIT utilizza il più recente motore di trading per garantire il corretto ed efficace funzionamento di tutte le tue operazioni e per assicurarti la migliore protezione disponibile."
+      },
+      {
+        "img": "trading",
+        "title": "Il trading di cui puoi fidarti",
+        "description": "Golden PROFIT è leader mondiale nel trading online ed è stata riconosciuta a livello globale per il suo design intuitivo e la sua piattaforma di facile utilizzo."
+      }
+    ],
+    "table_title": "Trader online",
+    "table_head": [
+      "Utente",
+      "Tempo",
+      "Registrato"
+    ],
+    "table_inner": [
+      {
+        "name": "J******",
+        "img": "register"
+      },
+      {
+        "name": "K******",
+        "img": "register"
+      },
+      {
+        "name": "S******",
+        "img": "register"
+      },
+      {
+        "name": "M******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "L******",
+        "img": "register"
+      },
+      {
+        "name": "N******",
+        "img": "register"
+      },
+      {
+        "name": "B******",
+        "img": "register"
+      },
+      {
+        "name": "O******",
+        "img": "register"
+      },
+      {
+        "name": "P******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "G******",
+        "img": "register"
+      }
+    ],
+    "faq_title": "FAQ",
+    "faq_question": [
+      {
+        "question": "Quanto posso guadagnare?",
+        "answer": "Il tuo profitto dipende dalle tue decisioni e dai tuoi contributi. Coloro che producono interessi, effettuando operazioni di trading più dispendiose, guadagnano molto di più rispetto a coloro che effettuano operazioni a livelli inferiori. Tuttavia, dipende totalmente da come desideri operare."
+      },
+      {
+        "question": "Ho bisogno di esperienza nel trading?",
+        "answer": "Golden PROFIT è stata progettata per i trader di qualsiasi livello e può offrirti le competenze e la sicurezza necessarie per fare trading di alto livello. La piattaforma include le informazioni necessarie per iniziare a fare trading, sia che tu sia un principiante o un trader professionista."
+      },
+      {
+        "question": "Quanto costa?",
+        "answer": "La nostra piattaforma è completamente gratuita. Tutto ciò di cui hai bisogno è il tuo capitale iniziale di €250, che serve per investire e fare trading."
+      },
+      {
+        "question": "Quanti membri ci sono?",
+        "answer": "Abbiamo oltre 250.000 membri che utilizzano i nostri servizi in tutto il mondo."
+      },
+      {
+        "question": "Quali aziende posso utilizzare?",
+        "answer": "Puoi fare trading su tutte le aziende pubbliche delle principali borse del mondo. Se ne hai sentito parlare, puoi fare trading su di essa!"
+      }
+    ],
+    "second_form": "Inizia adesso la tua nuova vita",
+    "disclaimer": [
+      "IMPORTANTE: ",
+      "Guadagni e dichiarazioni di non responsabilità",
+      "Le rappresentazioni di entrate e guadagni effettuate da Golden Profit, (collettivamente, \"Questo Sito\") vengono utilizzate solo come esempi fittizi del potenziale di guadagno. I successi riportati nelle testimonianze e in altri esempi sono risultati eccezionali e, pertanto, non devono essere intesi come una garanzia che tu o altri otteniate gli stessi risultati. I risultati individuali varieranno e dipenderanno interamente dall'uso che farai di Golden Profit.",
+      "Questo Sito non è responsabile per le tue azioni. Sei tu l'unico responsabile delle tue azioni e decisioni quando usi i prodotti e i servizi e, perciò, devi sempre esercitare cautela e dovuta diligenza. Accetti che Questo Sito non è responsabile in alcun modo nei tuoi confronti per i risultati derivanti dall'utilizzo dei nostri prodotti e servizi. Vedi i nostri Termini e Condizioni per consultare la nostra piena esclusione di responsabilità e altre restrizioni.",
+      "Questo Sito può ricevere compensi per i prodotti e i servizi che ti consiglia. Se non desideri che Questo Sito venga ricompensato per una raccomandazione, allora ti consigliamo di effettuare ricerche online per trovare un prodotto simile tramite un link non di affiliazione.",
+      "*Testimonianze:",
+      "Tutti i personaggi, le informazioni e gli eventi descritti su Questo Sito sono interamente fittizi. Qualsiasi somiglianza con eventi o persone reali, vive o morte, è puramente casuale."
+    ],
+    "bottom_info": [
+      "Utilizziamo i cookie per capire come usi il nostro sito e per migliorare la tua esperienza. Ciò include la personalizzazione di contenuti e pubblicità. Continuando ad utilizzare il nostro sito, accetti l'uso dei cookie da parte nostra, l'Informativa sulla Privacy aggiornata e i Termini di Utilizzo. Questo sito web è un Advertorial. ",
+      "Maggiori informazioni"
+    ]
+  },
+  "pl": {
+    "header_title": "– Artykuł sponsorowany –",
+    "header_subtitle": "Liczba naszych nowych użytkowników rośnie w niezwykłym tempie.",
+    "title": "Odkryj swoją osobistą kopalnię złota",
+    "subtitle": "Dołącz do tysięcy osób inwestujących w rynek złota!",
+    "customers_name": [
+      "Amelia",
+      "Elsie",
+      "Fred",
+      "Henry",
+      "Ivy",
+      "Evelin"
+    ],
+    "flag_img": "pl",
+    "status": " dołączyło",
+    "video_title": "Stuknij, aby obejrzeć i poznać sekret!",
+    "title_form": "ZMIEŃ SWOJE ŻYCIE JUŻ DZIŚ!",
+    "first_name": "Imię",
+    "last_name": "Nazwisko",
+    "email": "Twój adres e-mail",
+    "password": "Hasło",
+    "phone_number": "Numer telefonu",
+    "pass2": "Confirm Password",
+    "button": "Rozpocznij teraz",
+    "agreement_first": "Wyrażam zgodę na przechowywanie mojego adresu e-mail do celów przyszłego przekazywania informacji oraz ofert handlowych dotyczących oprogramowania handlowego oraz platform handlowych.",
+    "agreement_second": "Akceptuję warunki oraz politykę prywatności",
+    "terms_links": "warunki",
+    "privacy_links": "politykę prywatności",
+    "button_last": "Rozpocznij teraz",
+    "passtest": [
+      "Hasło musi składać się z 8 znaków.",
+      "Nie może zawierać znaków specjalnych.",
+      "Musi zawierać co najmniej 1 literę.",
+      "Musi zawierać co najmniej 1 wielką literę.",
+      "Musi zawierać co najmniej 1 cyfrę."
+    ],
+    "more_title": [
+      "Jeśli zmienisz zdanie, możesz w dowolnym momencie kliknąć link..."
+    ],
+    "more_decription": "„Wypisz się” znajdujący się w stopce każdej otrzymane od nas wiadomości e-mail. Wszystkie Twoje dane osobowe będziemy traktować z zachowaniem poufności. Klikając powyżej, wyrażasz zgodę na możliwość przetwarzania przez nas Twoich danych osobowych zgodnie z obowiązującymi warunkami.",
+    "join_title": "Dzięki rosnącym cenom złota nigdy nie było lepszego momentu na zainwestowanie.",
+    "join_subtitle": "Zarejestruj się już dziś i zabezpiecz swoje pieniądze, inwestując w złoto!",
+    "join_description": "Złoto było kluczową miarą bogactwa od setek lat. Mimo postępu w przemyśle i technologii złoto wciąż stanowi solidny standard światowych finansów. Po kryzysie finansowym w 2008 roku złoto było jednym z nielicznych przemysłów, które pozostały silne. Jego długa historia i wartość fizyczna oznaczają, że przetrwa każde zawirowania na rynku.",
+    "invest_main_title": "Inwestuj w złoto z Golden Profit",
+    "invest_descriptions": [
+      {
+        "step": "KROK",
+        "name": "Zarejestruj się",
+        "text": [
+          "Zarejestrowanie konta zajmuje tylko kilka minut dzięki uproszczonemu systemowi rejestracji Golden Profit. Po prostu wpisz swoje dane, a my zajmiemy się resztą.",
+          ""
+        ]
+      },
+      {
+        "step": "KROK",
+        "name": "Inwestuj",
+        "text": [
+          "Skontaktuje się z Tobą jeden z naszych osobistych brokerów, których dokładnie Ci wyjaśni, co musisz zrobić, żeby dokonać swojej pierwszej inwestycji.",
+          "Minimalna kwota wpłaty to 941,93 zł ($250)."
+        ]
+      },
+      {
+        "step": "KROK",
+        "name": "Handluj",
+        "text": [
+          "Gdy aktywujesz już swoje konto poprzez wpłacenie funduszy, będziesz mógł zacząć inwestować w swoją przyszłość.",
+          ""
+        ]
+      }
+    ],
+    "blue_btn": "Zarejestruj się tutaj ",
+    "trade_title": "Trend mówi sam za siebie",
+    "trade_description": "Ponieważ coraz więcej inwestorów zaczyna ponownie interesować się złotem, ceny zaczęły rosnąć w zawrotnym tempie. To dlatego, że złoto oferuje więcej bezpieczeństwa niż jakikolwiek inny towar, a w świecie coraz częstszych finansowych niepokojów bezpieczeństwo jest trudno znaleźć. Spójrz na poniższy wykres, by zobaczyć, jak bardzo wzrosła cena złota w ciągu ostatnich 12 miesięcy.",
+    "famous_title": "Znane nazwiska w handlu",
+    "famous_description": "Jest wiele znanych nazwisk w handlu. Oto, co niektóre z najbardziej znanych osób mają do powiedzenia.",
+    "famous_body": [
+      {
+        "img": "elder",
+        "name": "Alexander Elder",
+        "text": "Możesz być wolny. Możesz żyć i pracować gdziekolwiek na świecie. Możesz być niezależny od rutyny i nie być zależnym od nikogo."
+      },
+      {
+        "img": "seykota",
+        "name": "Ed Seykota",
+        "text": "Zwycięstwo lub porażka, każdy otrzymuje od rynku to, czego chce. Niektórzy ludzie po prostu lubią przegrywać, więc wygrywają przez przegrywanie pieniędzy."
+      },
+      {
+        "img": "oneil",
+        "name": "William O’Neil",
+        "text": "To co wygląda na zbyt ambitne i ryzykowne dla większości, najczęściej się opłaca, a to co wygląda na kiepskie i tanie przeważnie tylko traci."
+      },
+      {
+        "img": "buffet",
+        "name": "Warren Buffett",
+        "text": "Nie musisz być geniuszem. Inwestowanie nie jest grą, w której gość ze 160 IQ pokonuje kogoś z 130 IQ."
+      }
+    ],
+    "benefits_title": "Korzyści obrotu przez Internet",
+    "benefits_subtitle": "To najlepszy sposób inwestowania pieniędzy",
+    "benefits_information": [
+      {
+        "img": "accurate",
+        "title": "Precyzyjny obrót",
+        "description": "Korzystaj z najświeższych aktualizacji handlowych Golden PROFIT na żywo, aby przy każdym obrocie podejmować właściwe decyzje."
+      },
+      {
+        "img": "cutting",
+        "title": "Najnowocześniejsza technologia",
+        "description": "Golden PROFIT wykorzystuje najnowocześniejsze narzędzie handlu, by wszystkie Twoje transakcje przebiegały sprawnie i skutecznie oraz aby zapewnić Ci najlepszą możliwą ochronę."
+      },
+      {
+        "img": "trading",
+        "title": "Obrót, któremu możesz ufać",
+        "description": "Golden PROFIT to światowi liderzy w obrocie online, cenieni na całym świecie za intuicyjny design oraz platformę przyjazną dla użytkowników."
+      }
+    ],
+    "table_title": "Internetowi gracze giełdowi",
+    "table_head": [
+      "Użytkownik",
+      "Czas",
+      "Zarejestrowany"
+    ],
+    "table_inner": [
+      {
+        "name": "J******",
+        "img": "register"
+      },
+      {
+        "name": "K******",
+        "img": "register"
+      },
+      {
+        "name": "S******",
+        "img": "register"
+      },
+      {
+        "name": "M******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "L******",
+        "img": "register"
+      },
+      {
+        "name": "N******",
+        "img": "register"
+      },
+      {
+        "name": "B******",
+        "img": "register"
+      },
+      {
+        "name": "O******",
+        "img": "register"
+      },
+      {
+        "name": "P******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "G******",
+        "img": "register"
+      }
+    ],
+    "faq_title": "FAQ",
+    "faq_question": [
+      {
+        "question": "Ile mogę zarobić?",
+        "answer": "Twój zysk zależy od Twoich decyzji i wkładu. Osoby składające odsetki w celu dokonywania transakcji na wyższe kwoty mogą zarobić więcej niż osoby dokonujące transakcji na niższych poziomach. Wszystko zależy jednak od tego, w jaki sposób chcesz dokonywać transakcji."
+      },
+      {
+        "question": "Czy muszę mieć doświadczenie w obrocie?",
+        "answer": "Golden PROFIT zostało zaprojektowane z myślą o graczach na każdym poziomie i może dać Ci umiejętności oraz pewność potrzebną do dokonywania transakcji na wyższym poziomie. Platforma zawiera informacje niezbędne do rozpoczęcia obrotu, niezależnie od tego, czy jesteś zupełnym nowicjuszem czy też profesjonalnym graczem."
+      },
+      {
+        "question": "Ile to kosztuje?",
+        "answer": "Korzystanie z naszej platformy jest całkowicie darmowe. Wystarczy kapitał wyjściowy wysokości 941,93 zł ($250), którym sam będziesz dysponować podczas inwestycji i obrotu."
+      },
+      {
+        "question": "Ilu jest członków?",
+        "answer": "Mamy ponad 250 000 członków, którzy korzystają z naszych usług na całym świecie."
+      },
+      {
+        "question": "Z których firm mogę korzystać?",
+        "answer": "Możesz obracać akcjami wszystkich spółek giełdowych ze wszystkich ważnych giełd na świecie. Jeśli o niej słyszałeś, możesz nią obracać!"
+      }
+    ],
+    "second_form": "Rozpocznij swoje nowe życie już teraz",
+    "disclaimer": [
+      "WAŻNE: ",
+      "Zastrzeżenia prawne i dotyczące zysków",
+      "Zarobki i zyski przedstawione przez Golden Profit, (łącznie „Niniejszy serwis”) wykorzystywane są tylko jako przykłady potencjalnych dochodów. Sukcesy przedstawione w rekomendacjach i inne przykłady stanowią wyjątki, a ich zamierzeniem nie jest zagwarantowanie, że osiągane wyniki będą takie same. Indywidualne wyniki mogą się różnić i zależą w całości od sposobu korzystania z Golden Profit.",
+      "Niniejszy serwis nie ponosi odpowiedzialności za Twoje działania. Korzystając z produktów i serwisów, ponosisz wyłączną odpowiedzialność za swoje działania i decyzje, dlatego zawsze zachowaj ostrożność i należytą staranność. Akceptujesz, że Niniejszy serwis nie ponosi żadnej odpowiedzialności za efekty korzystania z naszych produktów i usług. Aby zapoznać się z pełną treścią wyłączenia odpowiedzialności i innych zastrzeżeń, przeczytaj nasze Zasady i warunki.",
+      "Niniejszy serwis może uzyskiwać wynagrodzenie za polecanie produktów i usług. Jeśli nie chcesz, aby Niniejszy serwis uzyskał wynagrodzenie za polecenie, sugerujemy poszukać online podobnego produktu za pośrednictwem innego linku niż partnerski.",
+      "*Rekomendacje:",
+      "Wszystkie osoby, informacje i wydarzenia przedstawione w Niniejszym serwisie są całkowicie fikcyjne. Jakiekolwiek podobieństwo do prawdziwych wydarzeń czy osób jest zupełnie przypadkowe."
+    ],
+    "bottom_info": [
+      "Aby dowiedzieć się, w jaki sposób korzystasz z naszej strony, oraz w celu zapewnienia Ci większej wygody korzystania z naszej witryny, używamy plików cookie. Kontynuując korzystanie z naszej strony, zgadzasz się na wykorzystywanie przez nas plików cookie i akceptujesz naszą zmienioną Politykę prywatności oraz Warunki użytkowania. Ta strona zawiera artykuły sponsorowane. ",
+      "Więcej informacji"
+    ]
+  },
+  "de": {
+    "header_title": "– Werbeanzeige –",
+    "header_subtitle": "Wir haben eine beispiellose Anzahl neuer Nutzer.",
+    "title": "Entdecken Sie Ihre persönliche Goldgrube",
+    "subtitle": "Investieren Sie in den Goldmarkt wie tausend andere Menschen es auch tun!",
+    "customers_name": [
+      "Amelia",
+      "Elsie",
+      "Fred",
+      "Henry",
+      "Ivy",
+      "Evelin"
+    ],
+    "flag_img": "de",
+    "status": " Beigetreten",
+    "video_title": "Tippen Sie hier, um das Geheimnis zu erfahren!",
+    "title_form": "ÄNDERN SIE HEUTE IHR LEBEN!",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "phone_number": "Telefon",
+    "pass2": "Confirm Password",
+    "button": "Beginnen Sie jetzt",
+    "agreement_first": "Ich bin damit einverstanden, dass meine E-Mail-Adresse gespeichert wird, damit ich Informationen und kommerzielle Angebote über Handelssoftware und -plattformen erhalte.",
+    "agreement_second": "Mit den allgemeinen Geschäftsbedingungen und der Datenschutzerklärung erkläre ich mich einverstanden",
+    "terms_links": "allgemeinen Geschäftsbedingungen",
+    "privacy_links": "Datenschutzerklärung",
+    "button_last": "Rozpocznij teraz",
+    "passtest": [
+      "Das Passwort muss 8 Zeichen lang.",
+      "Es dürfen keine Sonderzeichen enthalten sein.",
+      "Es muss mindestens ein Buchstabe enthalten sein.",
+      "Es muss mindestens einen Großbuchstaben enthalten.",
+      "Es muss mindestens eine Ziffer enthalten sein."
+    ],
+    "more_title": [
+      "Ihre Meinung können Sie jederzeit ändern, indem Sie auf den Abmeldelink in der..."
+    ],
+    "more_decription": "Fußzeile jeder von uns erhaltenen E-Mail klicken. Wir werden mit Ihren Daten sorgsam umgehen. Wenn Sie oben klicken, dürfen wir Ihre Daten gemäß diesen Bedingungen verarbeiten.",
+    "join_title": "Mit steigenden Goldpreisen, war die Zeit noch nie so günstig zum investieren.",
+    "join_subtitle": "Registrieren Sie sich heute and sichern Sie Ihr Geld mit Gold Investitionen!",
+    "join_description": "Gold ist seit Hunderten von Jahren das wichtigste Maß für den Wohlstand. Mit den fortschreitenden Branchen und Technologien bietet Gold nach wie vor einen soliden Standard für globale Finanzen. Nach dem Finanzcrash von 2008 war Gold eine der wenigen Branchen, die stark blieben. Aufgrund seiner langen Geschichte und seines physischen Werts wird Gold jede Krise am Markt überleben.",
+    "invest_main_title": "Investieren Sie in Gold mit Golden Profit",
+    "invest_descriptions": [
+      {
+        "step": "SCHRITT",
+        "name": "Registrieren",
+        "text": [
+          "Einen Konto zu eröffnen dauert nur ein paar Minuten mit Golden Profit's optimierten Anmeldesystem. Sie müssen lediglich Ihre Daten eintragen, wir machen den Rest.",
+          ""
+        ]
+      },
+      {
+        "step": "SCHRITT",
+        "name": "Investieren",
+        "text": [
+          "Einer unserer Broker wird Sie kontaktieren, um Ihnen zu erklären was Sie tun müssen, um Ihre erste Investition zu tätigen.",
+          "Der Mindestbetrag für eine Einzahlung beträgt 250€."
+        ]
+      },
+      {
+        "step": "SCHRITT",
+        "name": "Handeln",
+        "text": [
+          "Sobald Sie Ihren Account durch die Überweisung des nötigen Kapitals aktiviert haben, können Sie anfangen in Ihre Zukunft zu investieren.",
+          ""
+        ]
+      }
+    ],
+    "blue_btn": "Hier registrieren ",
+    "trade_title": "Der Trend spricht für sich",
+    "trade_description": "Da immer mehr Investoren wieder am Goldmarkt interessiert sind, beginnen die Preise in die Höhe zu schießen. Das liegt daran, dass Gold mehr Sicherheit bietet als jede andere Ware. In einer Welt in der Finanzturbulenzen immer mehr vorkommen, ist Sicherheit schwer zu finden. Sehen Sie in der unteren Grafik wie sehr der Goldpreis in den letzten 12 Monaten gestiegen ist.",
+    "famous_title": "Berühmte Namen im Handel",
+    "famous_description": "Es gibt viele große Namen im Handel. Hier sind ein paar der Dinge, die die berühmtesten Händler sagen.",
+    "famous_body": [
+      {
+        "img": "elder",
+        "name": "Alexander Elder",
+        "text": "Sie können frei sein. Sie können überall auf der Welt leben und arbeiten. Sie können unabhängig vom Trott leben und niemandem untergeben sein."
+      },
+      {
+        "img": "seykota",
+        "name": "Ed Seykota",
+        "text": "Gewinn oder Verlust, jeder bekommt das, was er aus dem Markt ziehen möchte. Manche Leute scheinen gern zu verlieren, also gewinnen sie, indem sie Geld verlieren."
+      },
+      {
+        "img": "oneil",
+        "name": "William O’Neil",
+        "text": "Was der Mehrheit zu hoch und riskant erscheint, steigt normalerweise, und was niedrig und billig erscheint, fällt normalerweise."
+      },
+      {
+        "img": "buffet",
+        "name": "Warren Buffett",
+        "text": "Sie müssen kein Genie sein. Investieren ist kein Spiel, bei dem der Typ mit dem IQ von 160 den Typen mit dem IQ von 130 schlägt."
+      }
+    ],
+    "benefits_title": "Online Trading Benefits",
+    "benefits_subtitle": "Es ist die beste Weise ihr Geld zu investieren",
+    "benefits_information": [
+      {
+        "img": "accurate",
+        "title": "Präzises Handeln",
+        "description": "Nutzen Sie Golden PROFIT'S live Trading-Updates um bei jedem Handel die richtige Entscheidung zu treffen."
+      },
+      {
+        "img": "cutting",
+        "title": "Spitzentechnologie",
+        "description": "Golden PROFIT nutzt die modernste Trading Engine, um sicherzustellen dass alle Ihre Geschäfte reibungslos und effizient über die Bühne gehen, und dass Sie den besten verfügbaren Schutz haben."
+      },
+      {
+        "img": "trading",
+        "title": "Vertrauenswürdige Geschäfte",
+        "description": "Golden PROFIT ist führend im weltweiten Online-Handel und wurde global für ihr intuitives Design und eine benutzerfreundliche Plattform anerkannt."
+      }
+    ],
+    "table_title": "Online-Händler",
+    "table_head": [
+      "Nutzer",
+      "Zeit",
+      "Angemeldet"
+    ],
+    "table_inner": [
+      {
+        "name": "J******",
+        "img": "register"
+      },
+      {
+        "name": "K******",
+        "img": "register"
+      },
+      {
+        "name": "S******",
+        "img": "register"
+      },
+      {
+        "name": "M******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "L******",
+        "img": "register"
+      },
+      {
+        "name": "N******",
+        "img": "register"
+      },
+      {
+        "name": "B******",
+        "img": "register"
+      },
+      {
+        "name": "O******",
+        "img": "register"
+      },
+      {
+        "name": "P******",
+        "img": "register"
+      },
+      {
+        "name": "A******",
+        "img": "register"
+      },
+      {
+        "name": "G******",
+        "img": "register"
+      }
+    ],
+    "faq_title": "FAQ",
+    "faq_question": [
+      {
+        "question": "Wie viel Geld kann ich verdienen?",
+        "answer": "Ihr Profit hängt von Ihren Entscheidungen und Ihrem Input ab. Wer seine Zinsen in höherwertige Geschäfte investiert, kann deutlich mehr verdienen, als jene die Trades zu niedrigeren Preisen platzieren. Es kommt jedoch ganz darauf an, wie Sie handeln wollen."
+      },
+      {
+        "question": "Brauche ich Erfahrung als Börsen-Makler?",
+        "answer": "Golden PROFIT wurde für jedes Trader-Niveau entwickelt und kann Ihnen die Fähigkeiten und das Vertrauen vermitteln, die Sie benötigen, um Trades auf hohem Niveau zu erzielen. Die Plattform liefert die nötigen Informationen damit Sie gleich anfangen können, egal ob Sie ein Anfänger oder erfahrener Händler sind."
+      },
+      {
+        "question": "Was kostet es mich?",
+        "answer": "Die Nutzung unserer Plattform ist völlig kostenlos. Sie brauchen nur Ihre 250€ Startkapital, um zu investieren und zu handeln."
+      },
+      {
+        "question": "Wie viele Mitglieder gibt es?",
+        "answer": "Weltweit nutzen 250.000 Mitglieder unsere Dienste."
+      },
+      {
+        "question": "Welche Firmen kann ich nutzen?",
+        "answer": "Sie können mit allen börsennotierten Unternehmen aller Börsen der Welt handeln. Wenn Sie von ihnen gehört haben, können Sie mit ihnen handeln."
+      }
+    ],
+    "second_form": "Beginnen Sie jetzt Ihr neues Leben",
+    "disclaimer": [
+      "WICHTIG: ",
+      "Erträge und Haftungsausschluss",
+      "Die Erträge und Einnahmen von Golden Profit, (ab jetzt „diese Website“) dienen nur als Beispiele potentieller Einnahmen. Der Erfolg der Personen in den Erfahrungsberichten und anderen Beispielen sind außergewöhnliche Ergebnisse und daher nicht als Garantie dafür gedacht, dass Sie oder andere dieselben Ergebnisse erzielen werden. Individuelle Ergebnisse können abweichen und hängen vollständig davon ab wie Sie Golden Profit nutzen.",
+      "Diese Website ist nicht für Ihre Handlungen verantwortlich. Sie tragen die alleinige Verantwortung für Ihre Handlungen und Entscheidungen, wenn Sie Produkte und Dienstleistungen nutzen, und sollten daher immer Vorsicht und gebührende Sorgfalt walten lassen. Sie stimmen zu, dass diese Webseite in keinster Weise Ihnen gegenüber für die Ergebnisse der Verwendung unserer Produkte und Dienstleistungen haftbar ist. In unseren „Geschäftsbedingungen“ können Sie die Einzelheiten zum Thema Haftbarkeit und anderer Einschränkungen nachlesen.",
+      "Diese Website erhält eine Vergütung für die Produkte und Dienstleistungen, die sie Ihnen empfiehlt. Sollten Sie nicht wünschen, dass diese Website eine Vergütung für Empfehlungen erhält, raten wir Ihnen zu einer Online-Suche nach einem ähnlichen, unabhängigen Produkt.",
+      "*Erfahrungsberichte:",
+      "Alle Figuren, Informationen und Ereignisse auf dieser Website sind fiktiv. Jegliche Ähnlichkeit zu aktuellen Ereignissen oder Personen, lebend oder tot, ist reiner Zufall."
+    ],
+    "bottom_info": [
+      "Wir verwenden Cookies, um zu verstehen, wie Sie unsere Website benutzen, und um Ihr Erlebnis zu verbessern. Dies schließt personalisierte Inhalte und Werbung ein. Indem Sie unsere Website weiterverwenden, stimmen Sie unserer Cookie-Nutzung, unserer überarbeiteten Datenschutzrichtlinie und unseren Nutzungsbedingungen zu. Diese Website ist ein Advertorial. ",
+      "Weitere Informationen"
+    ]
   }
 }

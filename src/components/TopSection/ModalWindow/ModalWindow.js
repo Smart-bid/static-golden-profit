@@ -5,6 +5,9 @@ import sv from "../flag-img/se.svg";
 import fi from "../flag-img/fi.svg";
 import nl from "../flag-img/nl.svg";
 import es from "../flag-img/es.svg";
+import it from "../flag-img/it.svg";
+import pl from "../flag-img/pl.svg";
+import de from "../flag-img/de.svg";
 
 
 export default class ModalWindow extends Component {
@@ -20,7 +23,10 @@ export default class ModalWindow extends Component {
                 sv,
                 fi,
                 nl,
-                es
+                es,
+                it,
+                pl,
+                de
             }
         }
     }
