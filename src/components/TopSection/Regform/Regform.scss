@@ -134,6 +134,12 @@
         font-size: .65em;
         max-width: 157px;
         margin: 0 auto;
+        span {
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
     }
 }
 .MuiListItem-gutters {
@@ -146,6 +152,9 @@
 .MuiSvgIcon-root {
     width: 15px!important;
     height: 15px!important;
+}
+.MuiButtonBase-root {
+    vertical-align: top!important;
 }
 .popper {
     min-width: 282px;

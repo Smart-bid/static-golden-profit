@@ -7,14 +7,20 @@
     font-weight: 500;
     margin-bottom: 30px;
     font-size: 57px;
+    @media (max-width: 764px) {
+      font-size: 45px;
+    }
   }
   .accordion > .card {
     border: 1px solid #e8dfbb;
     background: #ffffff;
     border-radius: 4px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     overflow: hidden;
     padding: 0;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   .accordion>.card:not(:first-of-type):not(:last-of-type) {
     border-bottom: 1px solid #e8dfbb;

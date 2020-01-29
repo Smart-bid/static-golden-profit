@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 import ua from "../flag-img/ua.svg";
 import dk from "../flag-img/dk.svg";
+import sv from "../flag-img/se.svg";
+import fi from "../flag-img/fi.svg";
+import nl from "../flag-img/nl.svg";
+import es from "../flag-img/es.svg";
 
 
 export default class ModalWindow extends Component {
@@ -12,7 +16,11 @@ export default class ModalWindow extends Component {
             nameArr: "",
             flag: {
                 ua,
-                dk
+                dk,
+                sv,
+                fi,
+                nl,
+                es
             }
         }
     }

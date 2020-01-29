@@ -23,10 +23,11 @@ export default class VideoPlayer extends Component {
 
 
     render() {
+        let languageManager = this.props.languageManager();
         return (
             <div className="VideoPlayer">
                 <div className={`videoOverlayInner ` + this.state.hide} onClick={this.hideElement}>
-                    <p>Tap to watch and learn the secret!</p>
+                    <p>{languageManager.video_title}</p>
                     <img src={btn} alt="play-button"/>
                 </div>
                 <Vimeo video="https://player.vimeo.com/video/311657644?app_id=122963" paused={this.state.play}
