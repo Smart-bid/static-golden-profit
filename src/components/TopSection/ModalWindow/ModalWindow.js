@@ -8,6 +8,7 @@ import es from "../flag-img/es.svg";
 import it from "../flag-img/it.svg";
 import pl from "../flag-img/pl.svg";
 import de from "../flag-img/de.svg";
+import ru from "../flag-img/ru.svg";
 
 
 export default class ModalWindow extends Component {
@@ -26,7 +27,8 @@ export default class ModalWindow extends Component {
                 es,
                 it,
                 pl,
-                de
+                de,
+                ru
             }
         }
     }

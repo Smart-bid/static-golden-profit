@@ -83,7 +83,7 @@
     }
     .MuiInputLabel-outlined {
         transform: translate(14px, 12px) scale(1);
-        background: transparent!important;
+        background: #ffffff!important;
     }
     .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
         background-color: rgba(82,188,230,.05);
@@ -105,6 +105,7 @@
         color: #666!important;
         font-size: .75em;
         line-height: 1.25;
+        margin-bottom: 10px;
     }
     .PrivateSwitchBase-root-152 {
         padding: 0;
@@ -132,15 +133,23 @@
         text-align: center;
         line-height: 1.25;
         font-size: .65em;
-        max-width: 157px;
+        max-width: 200px;
         margin: 0 auto;
         span {
+            &:first-of-type {
+                background: url("./lock.svg") no-repeat top left / 9px;
+                padding-left: 12px;
+            }
             span {
                 display: block;
                 text-align: center;
+                background: transparent!important;
             }
         }
     }
+}
+.MuiFormHelperText-root {
+    display: none;
 }
 .MuiListItem-gutters {
     padding: 0 10px!important;
