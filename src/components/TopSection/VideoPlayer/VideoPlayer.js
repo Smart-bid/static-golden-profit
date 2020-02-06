@@ -17,6 +17,8 @@ export default class VideoPlayer extends Component {
         this.setState({
             hide: !this.state.hide,
             play: !this.state.play
+        }, () => {
+            this.props.trackVideoPlay();
         });
 
     }
